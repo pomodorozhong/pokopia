@@ -8,9 +8,8 @@ Tools and reference data for **Pokémon Pokopia**.
 |------|-------------|
 | `data/Pokopia.csv` | Pokémon database (locations, habitats, favorites, specialties) |
 | `data/localization.json` | `en` / `ja` / `zh_tw` names for Pokémon, favorites, specialties, habitats, items, and item categories |
-| `icons/pokemon/` | Pokémon icons by English slug (`bulbasaur.png`, …) |
-| `icons/pokemon/by_number/` | Pokémon icons by Pokopia dex number (`001.png`, …) |
-| `icons/items/` | Item icons by Serebii slug (`honey.png`, …) |
+| `icons/pokemon/` | Pokémon icons by English name (`bulbasaur.png`, `paldeanwooper.png`, …) |
+| `icons/items/` | Item icons by catalog slug (`honey.png`, …) |
 | `scripts/` | Scripts used to download / rebuild the datasets above |
 
 ## Data sources
@@ -25,11 +24,26 @@ All data and images here are fan-compiled from public community resources. This 
 
 ### Icons (`icons/`)
 
-- **Primary source:** [Serebii.net Pokémon Pokopia](https://www.serebii.net/pokemonpokopia/)
-  - Numbered sprites: `/pokemonpokopia/pokemon/small/{###}.png`
-  - Item icons: `/pokemonpokopia/items/{slug}.png` (discovered via the [items](https://www.serebii.net/pokemonpokopia/items.shtml) and [favorites](https://www.serebii.net/pokemonpokopia/favorites.shtml) pages)
-- **Seed / supplemental pack:** [Pokopia Habitat Planner Image Cache](https://github.com/SergioPalGam/Pokopia-Habitat-Planner/releases) (also Serebii-derived; provides slug-named Pokémon icons and a large item set). See their [`SOURCES.md`](https://github.com/SergioPalGam/Pokopia-Habitat-Planner/blob/main/SOURCES.md).
-- Refresh: `python3 scripts/download_icons.py`
+Pokémon and item icons are downloaded by `scripts/download_icons.py`.
+
+**Pokémon** (`icons/pokemon/{name}.png` — name only, no numbered copies)
+
+- **Source:** [Serebii — Available Pokémon](https://www.serebii.net/pokemonpokopia/availablepokemon.shtml) and [Event Pokédex](https://www.serebii.net/pokemonpokopia/eventpokedex.shtml)
+- Image files: `https://www.serebii.net/pokemonpokopia/pokemon/small/...`
+- Filename = English display name with non-alphanumerics removed  
+  (`Ho-Oh` → `hooh.png`, `Paldean Wooper` → `paldeanwooper.png`, `Farfetch'd` → `farfetchd.png`)
+
+**Items** (`icons/items/{slug}.png`)
+
+- **Primary source:** [Infipoke Pokopia Items](https://infipoke.com/game/pokopia/items)  
+  Images: `https://infipoke.com/img/pokopia/items/{slug}.webp` (saved as PNG)
+- **Fallback:** [Serebii Pokopia Items](https://www.serebii.net/pokemonpokopia/items.shtml)  
+  `https://www.serebii.net/pokemonpokopia/items/{slug}.png`  
+  (plus a small alias map in the script for known Infipoke/Serebii slug mismatches, e.g. `speedposter` → `speedyposter`)
+
+Refresh: `python3 scripts/download_icons.py`
+
+Note: Infipoke lists **1399** unique item slugs (1511 NUXT rows include duplicates). One catalog entry — `pokemoncenterrebuildkit` — currently has no reachable image on Infipoke or Serebii (both return HTTP 404); the script reports it and skips.
 
 ### `data/localization.json`
 
