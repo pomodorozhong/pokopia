@@ -65,8 +65,8 @@ Built by `scripts/build_localization.py` from:
 Refresh:
 
 ```bash
-pip install -r requirements.txt
-python3 scripts/build_localization.py
+uv sync --project scripts
+uv run --project scripts python scripts/build_localization.py
 ```
 
 naru sheet CSV endpoints used by the script:
@@ -108,10 +108,10 @@ naru sheet CSV endpoints used by the script:
 ## Rebuild everything
 
 ```bash
-pip install -r requirements.txt
-python3 scripts/download_pokopia_csv.py
-python3 scripts/download_icons.py
-python3 scripts/build_localization.py
+uv sync --project scripts
+uv run --project scripts python scripts/download_pokopia_csv.py
+uv run --project scripts python scripts/download_icons.py
+uv run --project scripts python scripts/build_localization.py
 ```
 
 ## License / ownership
