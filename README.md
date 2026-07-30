@@ -8,6 +8,7 @@ Tools and reference data for **Pokémon Pokopia**.
 |------|-------------|
 | `data/Pokopia.csv` | Pokémon database (locations, habitats, favorites, specialties) |
 | `data/localization.json` | `en` / `ja` / `zh_tw` names for Pokémon, favorites, specialties, habitats, items, and item categories |
+| `data/favorite_items.json` | Favorite-labeled item database (`favorite -> item slugs` + reverse `item -> favorites`) |
 | `icons/pokemon/` | Pokémon icons by English name (`bulbasaur.png`, `paldeanwooper.png`, …) |
 | `icons/items/` | Item icons by catalog slug (`honey.png`, …) |
 | `scripts/` | Scripts used to download / rebuild the datasets above |
@@ -68,6 +69,20 @@ Refresh:
 uv sync --project scripts
 uv run --project scripts python scripts/build_localization.py
 ```
+
+### `data/favorite_items.json`
+
+Derived from:
+
+- `data/localization.json` (canonical item slugs and favorite keys)
+- [Pokopia GamerTW — Favorites](https://pokopia.gamertw.com/favorite) favorite detail pages (`/favorite/<slug>`) for favorite→item name lists
+
+Notes:
+
+- Output stores both directions:
+  - `favorite_items.{favorite_key}.item_slugs` (favorite label → item slugs)
+  - `item_favorites.{item_slug}` (item slug → favorite labels)
+- Most GamerTW names map 1:1 to the localization item catalog. Any unresolved source names are retained under `unmatched_item_names_en` per favorite for transparency.
 
 naru sheet CSV endpoints used by the script:
 
