@@ -2,13 +2,54 @@
 
 Tools and reference data for **Pokémon Pokopia**.
 
+## Living Area Planner (web UI)
+
+Static planner for GitHub Pages: pick Pokémon for one living area, rank items by shared favorites, and warn on Ideal Habitat conflicts (Bright↔Dark, Dry↔Humid, Warm↔Cool).
+
+| Path | Description |
+|------|-------------|
+| `index.html` | Planner entry point |
+| `css/app.css`, `js/app.js` | UI styles and Mode 1 logic |
+| `data/planner.json` | Bundled dataset for the UI (built from CSV + localization + favorite items) |
+
+### Host on GitHub Pages
+
+1. Push this repo to GitHub.
+2. **Settings → Pages → Build and deployment**
+3. Source: **Deploy from a branch**
+4. Branch: `main` (or your default), folder: **/ (root)**
+5. Save. The app is served at `https://<user>.github.io/<repo>/`
+
+No build step is required at deploy time. After refreshing source data, regenerate the planner bundle:
+
+```bash
+python3 scripts/build_planner_data.py
+```
+
+Local preview (any static server from the repo root):
+
+```bash
+python3 -m http.server 8080
+# open http://localhost:8080/
+```
+
+### Mode 1 — Pokémon → Items
+
+1. Select multiple Pokémon planned for the same place.
+2. Items are ranked by how many distinct group favorites they satisfy (then by how many of the selected Pokémon they help).
+3. If selected Pokémon include opposing Ideal Habitats, a warning lists the conflict.
+
+Language: English / 日本語 / 繁體中文 (persisted in `localStorage`).
+
 ## Repository layout
 
 | Path | Description |
 |------|-------------|
+| `index.html` | Living Area Planner web UI (GitHub Pages) |
 | `data/Pokopia.csv` | Pokémon database (locations, habitats, favorites, specialties) |
 | `data/localization.json` | `en` / `ja` / `zh_tw` names for Pokémon, favorites, specialties, habitats, items, and item categories |
 | `data/favorite_items.json` | Favorite-labeled item database (`favorite -> item slugs` + reverse `item -> favorites`) |
+| `data/planner.json` | Prebuilt bundle for the planner UI |
 | `icons/pokemon/` | Pokémon icons by English name (`bulbasaur.png`, `paldeanwooper.png`, …) |
 | `icons/items/` | Item icons by catalog slug (`honey.png`, …) |
 | `scripts/` | Scripts used to download / rebuild the datasets above |
@@ -128,6 +169,7 @@ uv sync --project scripts
 uv run --project scripts python scripts/download_pokopia_csv.py
 uv run --project scripts python scripts/download_icons.py
 uv run --project scripts python scripts/build_localization.py
+python3 scripts/build_planner_data.py
 ```
 
 ## License / ownership

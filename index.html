@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokopia Living Area Planner</title>
+    <meta
+      name="description"
+      content="Plan which furniture and items to place with Pokémon in a living area. Rank items by shared favorites and spot Ideal Habitat conflicts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <p class="brand-mark">Pokopia</p>
+          <h1>Living Area Planner</h1>
+        </div>
+        <div class="topbar-actions">
+          <label class="lang-label" for="lang-select">Language</label>
+          <select id="lang-select" aria-label="Language">
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="zh_tw">繁體中文</option>
+          </select>
+        </div>
+      </header>
+
+      <nav class="mode-tabs" aria-label="Planner modes">
+        <button class="mode-tab is-active" type="button" data-mode="pokemon-to-items" aria-current="page">
+          <span class="mode-num" data-i18n="mode1_num">Mode 1</span>
+          <span class="mode-title" data-i18n="mode1_title">Pokémon → Items</span>
+        </button>
+        <button class="mode-tab is-disabled" type="button" disabled title="Coming later">
+          <span class="mode-num" data-i18n="mode2_num">Mode 2</span>
+          <span class="mode-title" data-i18n="mode2_title">Coming soon</span>
+        </button>
+      </nav>
+
+      <p class="lede" data-i18n="mode1_lede">
+        Pick the Pokémon you want to house together. We’ll rank items that match
+        their favorites, and warn you when Ideal Habitats clash.
+      </p>
+
+      <main class="layout">
+        <section class="panel picker-panel" aria-labelledby="picker-heading">
+          <div class="panel-head">
+            <h2 id="picker-heading" data-i18n="picker_heading">Choose Pokémon</h2>
+            <span class="count-pill" id="selected-count">0</span>
+          </div>
+
+          <div class="search-row">
+            <input
+              id="pokemon-search"
+              type="search"
+              autocomplete="off"
+              spellcheck="false"
+              data-i18n-placeholder="search_placeholder"
+              placeholder="Search by name, habitat, or favorite…"
+            />
+            <button id="clear-selection" type="button" class="ghost-btn" data-i18n="clear">
+              Clear
+            </button>
+          </div>
+
+          <div id="selected-tray" class="selected-tray" hidden></div>
+
+          <div id="habitat-warning" class="habitat-warning" hidden role="alert"></div>
+
+          <div id="pokemon-grid" class="pokemon-grid" role="listbox" aria-multiselectable="true"></div>
+        </section>
+
+        <section class="panel results-panel" aria-labelledby="results-heading">
+          <div class="panel-head">
+            <h2 id="results-heading" data-i18n="results_heading">Suggested items</h2>
+            <div class="results-meta">
+              <label class="filter-label">
+                <span data-i18n="min_score">Min matches</span>
+                <select id="min-score">
+                  <option value="1">1+</option>
+                  <option value="2" selected>2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                </select>
+              </label>
+              <span class="count-pill" id="results-count">0</span>
+            </div>
+          </div>
+
+          <p class="results-hint" id="results-hint" data-i18n="results_empty">
+            Select at least one Pokémon to see ranked items.
+          </p>
+
+          <div id="results-list" class="results-list"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p data-i18n="footer_note">
+          Fan tool for Pokémon Pokopia. Unofficial — not affiliated with Nintendo,
+          The Pokémon Company, or Game Freak.
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
