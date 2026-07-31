@@ -53,9 +53,10 @@ Built by `scripts/build_localization.py` from:
 | Content | Source |
 |---------|--------|
 | Pokémon names (`en`/`ja`/`zh_tw`) | [Infipoke Pokopia Pokédex](https://infipoke.com/zh-hant/game/pokopia/pokedex) (`name` slug, `name_ja`, `name_zh_tw`); English display names prefer the [naru-pokopia-zukan](https://github.com/naru08-creator/naru-pokopia-zukan) sheet |
-| Item names (`en`/`ja`) | [Infipoke Pokopia Items](https://infipoke.com/game/pokopia/items) (`name`, `name_ja`, `name_zh`). Not every item has `name_ja` upstream. |
-| Item names (`zh_tw`) | OpenCC `s2tw` conversion of Infipoke `name_zh` (original Simplified Chinese kept as `zh`) |
-| Item categories | Infipoke items filter labels (EN/JA/ZH-Hant pages) |
+| Item names (`en`/`ja`) | [Infipoke Pokopia Items](https://infipoke.com/game/pokopia/items) (`name`, `name_ja`, `name_zh`). Not every item has `name_ja` upstream. Infipoke Simplified Chinese is kept as `zh` for traceability. |
+| Item names (`zh_tw`) | [Pokopia GamerTW — 道具](https://pokopia.gamertw.com/zh-TW/item) `displayName`, matched to Infipoke slugs via id / imageSlug / English name |
+| Item categories (`en`/`ja`) | Infipoke items filter labels |
+| Item categories (`zh_tw`) | [Pokopia GamerTW — 道具](https://pokopia.gamertw.com/zh-TW/item) category filters |
 | Favorite categories (`en`/`ja`) | [naru-pokopia-zukan](https://github.com/naru08-creator/naru-pokopia-zukan) Google Sheets CSV |
 | Favorite categories (`zh_tw`) | [Pokopia GamerTW — 喜好](https://pokopia.gamertw.com/zh-TW/favorite) |
 | Specialties (`en`/`ja`) | naru-pokopia-zukan Google Sheets CSV (+ manual JP term map) |
@@ -106,13 +107,13 @@ naru sheet CSV endpoints used by the script:
     "bright": { "en": "Bright", "ja": "あかるい", "zh_tw": "明亮" }
   },
   "item_categories": {
-    "materials": { "en": "Materials", "ja": "素材", "zh_tw": "素材" }
+    "materials": { "en": "Materials", "ja": "素材", "zh_tw": "材料" }
   },
   "items": {
     "honey": {
       "en": "Honey",
       "ja": "あまいミツ",
-      "zh_tw": "蜂蜜",
+      "zh_tw": "甜甜蜜",
       "zh": "蜂蜜",
       "category": "Materials"
     }
