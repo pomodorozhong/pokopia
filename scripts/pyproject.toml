@@ -3,6 +3,5 @@ name = "pokopia-scripts"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-    "opencc-python-reimplemented>=0.1.7",
     "Pillow>=10.0.0",
 ]

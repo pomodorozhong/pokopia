@@ -7,7 +7,8 @@ Sources:
     https://infipoke.com/zh-hant/game/pokopia/pokedex
   - Item names (en/ja) + categories: Infipoke Items NUXT payload
     https://infipoke.com/game/pokopia/items
-    zh_tw item/category names: OpenCC s2tw conversion of Infipoke Simplified Chinese
+  - Item / category names (zh_tw): Pokopia GamerTW wiki
+    https://pokopia.gamertw.com/zh-TW/item
   - Favorite categories (en/ja): naru-pokopia-zukan Google Sheets CSV
     https://github.com/naru08-creator/naru-pokopia-zukan
   - Favorite categories (zh_tw): Pokopia GamerTW wiki
@@ -28,12 +29,16 @@ import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from opencc import OpenCC
-
 ROOT = Path(__file__).resolve().parents[1]
 OUT_PATH = ROOT / "data" / "localization.json"
 
 UA = "pokopia-data-collector/1.0 (+https://github.com/pomodorozhong/pokopia)"
+# GamerTW sits behind Cloudflare; a browser-like UA is required.
+UA_BROWSER = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/120.0.0.0 Safari/537.36"
+)
 
 INFIPOKE_POKEDEX = "https://infipoke.com/zh-hant/game/pokopia/pokedex"
 INFIPOKE_ITEMS = "https://infipoke.com/game/pokopia/items"
@@ -51,6 +56,8 @@ NARU_EN_CSV = (
 NARU_REPO = "https://github.com/naru08-creator/naru-pokopia-zukan"
 
 GAMERTW_FAVORITES = "https://pokopia.gamertw.com/zh-TW/favorite"
+GAMERTW_ITEMS_ZH = "https://pokopia.gamertw.com/zh-TW/item"
+GAMERTW_ITEMS_EN = "https://pokopia.gamertw.com/item"
 
 # EN favorite (naru / Serebii) -> zh_TW (gamertw slug pages / listing)
 FAVORITE_ZH_TW = {
@@ -239,15 +246,34 @@ ITEM_CATEGORY_EN_TO_KEY = {
     "Fossils": "fossils",
 }
 
+# GamerTW zh-TW item filter labels from https://pokopia.gamertw.com/zh-TW/item
+GAMERTW_CATEGORY_ZH_TW = {
+    "materials": "材料",
+    "food": "食物",
+    "furniture": "家具",
+    "misc": "雜物",
+    "outdoor": "戶外",
+    "utilities": "設備",
+    "nature": "自然",
+    "buildings": "建築",
+    "blocks": "方塊",
+    "kits": "套件",
+    "key_items": "關鍵道具",
+    "other": "其他",
+    "lost_relics_large": "遺跡寶物(大)",
+    "lost_relics_small": "遺跡寶物(小)",
+    "fossils": "化石",
+}
 
-def fetch(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+
+def fetch(url: str, user_agent: str = UA) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
     with urllib.request.urlopen(req, timeout=120) as resp:
         return resp.read()
 
 
-def fetch_text(url: str) -> str:
-    return fetch(url).decode("utf-8", "ignore")
+def fetch_text(url: str, user_agent: str = UA) -> str:
+    return fetch(url, user_agent=user_agent).decode("utf-8", "ignore")
 
 
 def load_nuxt(url: str) -> list:
@@ -282,8 +308,153 @@ def normalize_key(text: str) -> str:
     return text.strip("_")
 
 
+def alnum_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", text.strip().lower())
+
+
+def normalize_en_name(text: str) -> str:
+    text = text.lower().replace("&", " and ")
+    text = text.replace("’", "'").replace("é", "e").replace("♪", "")
+    text = text.replace("poké", "poke")
+    return alnum_key(text)
+
+
 def split_csv_list(value: str) -> list[str]:
     return [part.strip() for part in value.split(",") if part.strip()]
+
+
+def extract_gamertw_items(html: str) -> list[dict]:
+    """Parse item cards from GamerTW Next.js RSC payload."""
+    pattern = re.compile(
+        r'\{\\"id\\":\\"([^\\"]+)\\"'
+        r',\\"category\\":\\"([^\\"]+)\\"'
+        r',\\"imageSlug\\":\\"([^\\"]+)\\"'
+        r'.*?\\"displayName\\":\\"([^\\"]*)\\"',
+        re.S,
+    )
+    items: dict[str, dict] = {}
+    for match in pattern.finditer(html):
+        item_id = match.group(1)
+        items.setdefault(
+            item_id,
+            {
+                "id": item_id,
+                "category": match.group(2),
+                "imageSlug": match.group(3),
+                "displayName": match.group(4),
+            },
+        )
+    if not items:
+        raise RuntimeError("No GamerTW items found in page payload")
+    return list(items.values())
+
+
+def load_gamertw_item_names() -> dict:
+    """Fetch GamerTW EN + zh-TW item payloads for later Infipoke slug matching."""
+    zh_items = extract_gamertw_items(fetch_text(GAMERTW_ITEMS_ZH, user_agent=UA_BROWSER))
+    en_items = extract_gamertw_items(fetch_text(GAMERTW_ITEMS_EN, user_agent=UA_BROWSER))
+    en_by_id = {item["id"]: item for item in en_items}
+    zh_by_id = {item["id"]: item for item in zh_items}
+    if set(en_by_id) != set(zh_by_id):
+        raise RuntimeError("GamerTW EN/ZH item id sets differ")
+    return {
+        "zh_by_id": zh_by_id,
+        "en_by_id": en_by_id,
+    }
+
+
+def apply_gamertw_item_names(items: dict, gamertw: dict) -> dict:
+    """
+    Attach zh_tw names from GamerTW onto Infipoke item entries.
+
+    Matching priority against Infipoke catalog slugs:
+      1. GamerTW id with hyphens removed
+      2. Unique imageSlug
+      3. Alphanumeric equivalence of id / imageSlug
+      4. Exact / normalized English displayName (EN GamerTW page)
+    Already-matched Infipoke slugs are skipped so generic EN labels
+    (e.g. "Leaf") do not steal more specific GamerTW ids.
+    """
+    zh_by_id: dict = gamertw["zh_by_id"]
+    en_by_id: dict = gamertw["en_by_id"]
+
+    by_imageslug: dict[str, list[str]] = defaultdict(list)
+    for item_id, item in zh_by_id.items():
+        by_imageslug[item["imageSlug"]].append(item_id)
+
+    en_exact: dict[str, list[str]] = defaultdict(list)
+    en_norm: dict[str, list[str]] = defaultdict(list)
+    alnum_to_slugs: dict[str, list[str]] = defaultdict(list)
+    for slug, entry in items.items():
+        en_name = entry.get("en", "")
+        en_exact[en_name].append(slug)
+        en_norm[normalize_en_name(en_name)].append(slug)
+        alnum_to_slugs[alnum_key(slug)].append(slug)
+
+    matched: dict[str, str] = {}
+    methods: Counter = Counter()
+    unmatched_gamertw: list[str] = []
+
+    for item_id, zh_item in zh_by_id.items():
+        en_item = en_by_id[item_id]
+        en_name = en_item["displayName"]
+        image_slug = zh_item["imageSlug"]
+        zh_name = zh_item["displayName"]
+        slug = None
+        method = None
+
+        id_slug = item_id.replace("-", "")
+        if id_slug in items and id_slug not in matched:
+            slug, method = id_slug, "id"
+        elif (
+            image_slug in items
+            and image_slug not in matched
+            and len(by_imageslug[image_slug]) == 1
+        ):
+            slug, method = image_slug, "imageslug_unique"
+        else:
+            for key, label in (
+                (alnum_key(item_id), "alnum_id"),
+                (alnum_key(image_slug), "alnum_imageslug"),
+            ):
+                hits = [s for s in alnum_to_slugs.get(key, []) if s not in matched]
+                if len(hits) == 1:
+                    slug, method = hits[0], label
+                    break
+            if slug is None:
+                hits = [s for s in en_exact.get(en_name, []) if s not in matched]
+                if len(hits) == 1:
+                    slug, method = hits[0], "en_exact"
+                else:
+                    hits = [
+                        s
+                        for s in en_norm.get(normalize_en_name(en_name), [])
+                        if s not in matched
+                    ]
+                    if len(hits) == 1:
+                        slug, method = hits[0], "en_norm"
+                    elif (
+                        image_slug in items
+                        and image_slug not in matched
+                        and normalize_en_name(items[image_slug].get("en", ""))
+                        == normalize_en_name(en_name)
+                    ):
+                        slug, method = image_slug, "imageslug_en"
+
+        if slug:
+            matched[slug] = zh_name
+            items[slug]["zh_tw"] = zh_name
+            methods[method] += 1
+        else:
+            unmatched_gamertw.append(item_id)
+
+    missing_local = sorted(slug for slug in items if "zh_tw" not in items[slug])
+    return {
+        "matched": len(matched),
+        "methods": dict(methods),
+        "unmatched_gamertw_ids": unmatched_gamertw,
+        "missing_local_slugs": missing_local,
+    }
 
 
 def align_token_maps(en_rows: list[dict], jp_rows: list[dict], en_field: str, jp_field: str):
@@ -327,9 +498,8 @@ def build_pokemon(data: list) -> dict:
     return dict(sorted(pokemon.items(), key=lambda kv: int(kv[0])))
 
 
-def build_items(data: list, cc: OpenCC) -> tuple[dict, dict]:
+def build_items(data: list) -> tuple[dict, dict]:
     items = {}
-    categories = {}
     for item in data:
         if not isinstance(item, dict) or "slug" not in item or "name" not in item:
             continue
@@ -344,37 +514,36 @@ def build_items(data: list, cc: OpenCC) -> tuple[dict, dict]:
         if isinstance(name_ja, str) and name_ja:
             entry["ja"] = name_ja
         if isinstance(name_zh, str) and name_zh:
-            entry["zh_tw"] = cc.convert(name_zh)
-            entry["zh"] = name_zh  # keep source simplified for traceability
+            entry["zh"] = name_zh  # Infipoke Simplified Chinese (traceability)
         if isinstance(category, str) and category:
             entry["category"] = category
         items[slug] = entry
 
-    # Fill category JA/ZH from Infipoke locale page filter labels.
+    # Category EN/JA from Infipoke; zh_tw from GamerTW zh-TW item filters.
     category_i18n = {
-        "materials": {"en": "Materials", "ja": "素材", "zh_tw": "素材"},
-        "food": {"en": "Food", "ja": "食べ物", "zh_tw": "食物"},
-        "furniture": {"en": "Furniture", "ja": "家具", "zh_tw": "家具"},
-        "misc": {"en": "Misc.", "ja": "雑貨", "zh_tw": "雜貨"},
-        "outdoor": {"en": "Outdoor", "ja": "屋外", "zh_tw": "戶外"},
-        "utilities": {"en": "Utilities", "ja": "設備", "zh_tw": "設施"},
-        "nature": {"en": "Nature", "ja": "自然", "zh_tw": "自然"},
-        "buildings": {"en": "Buildings", "ja": "建物", "zh_tw": "建築"},
-        "blocks": {"en": "Blocks", "ja": "ブロック", "zh_tw": "方塊"},
-        "kits": {"en": "Kits", "ja": "キット", "zh_tw": "建造套件"},
-        "key_items": {"en": "Key Items", "ja": "大事なもの", "zh_tw": "重要道具"},
-        "other": {"en": "Other", "ja": "その他", "zh_tw": "其他"},
+        "materials": {"en": "Materials", "ja": "素材", "zh_tw": GAMERTW_CATEGORY_ZH_TW["materials"]},
+        "food": {"en": "Food", "ja": "食べ物", "zh_tw": GAMERTW_CATEGORY_ZH_TW["food"]},
+        "furniture": {"en": "Furniture", "ja": "家具", "zh_tw": GAMERTW_CATEGORY_ZH_TW["furniture"]},
+        "misc": {"en": "Misc.", "ja": "雑貨", "zh_tw": GAMERTW_CATEGORY_ZH_TW["misc"]},
+        "outdoor": {"en": "Outdoor", "ja": "屋外", "zh_tw": GAMERTW_CATEGORY_ZH_TW["outdoor"]},
+        "utilities": {"en": "Utilities", "ja": "設備", "zh_tw": GAMERTW_CATEGORY_ZH_TW["utilities"]},
+        "nature": {"en": "Nature", "ja": "自然", "zh_tw": GAMERTW_CATEGORY_ZH_TW["nature"]},
+        "buildings": {"en": "Buildings", "ja": "建物", "zh_tw": GAMERTW_CATEGORY_ZH_TW["buildings"]},
+        "blocks": {"en": "Blocks", "ja": "ブロック", "zh_tw": GAMERTW_CATEGORY_ZH_TW["blocks"]},
+        "kits": {"en": "Kits", "ja": "キット", "zh_tw": GAMERTW_CATEGORY_ZH_TW["kits"]},
+        "key_items": {"en": "Key Items", "ja": "大事なもの", "zh_tw": GAMERTW_CATEGORY_ZH_TW["key_items"]},
+        "other": {"en": "Other", "ja": "その他", "zh_tw": GAMERTW_CATEGORY_ZH_TW["other"]},
         "lost_relics_large": {
             "en": "Lost Relics (Large)",
             "ja": "失われた遺物 (大)",
-            "zh_tw": "失落遺物（大）",
+            "zh_tw": GAMERTW_CATEGORY_ZH_TW["lost_relics_large"],
         },
         "lost_relics_small": {
             "en": "Lost Relics (Small)",
             "ja": "失われた遺物 (小)",
-            "zh_tw": "失落遺物（小）",
+            "zh_tw": GAMERTW_CATEGORY_ZH_TW["lost_relics_small"],
         },
-        "fossils": {"en": "Fossils", "ja": "化石", "zh_tw": "化石"},
+        "fossils": {"en": "Fossils", "ja": "化石", "zh_tw": GAMERTW_CATEGORY_ZH_TW["fossils"]},
     }
     categories = dict(sorted(category_i18n.items()))
     return dict(sorted(items.items())), categories
@@ -484,7 +653,6 @@ def override_pokemon_english_from_naru(pokemon: dict, en_rows: list[dict]) -> No
 
 
 def main() -> None:
-    cc = OpenCC("s2tw")
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     print("Fetching Infipoke Pokédex…")
@@ -494,8 +662,20 @@ def main() -> None:
 
     print("Fetching Infipoke items…")
     items_data = load_nuxt(INFIPOKE_ITEMS)
-    items, item_categories = build_items(items_data, cc)
+    items, item_categories = build_items(items_data)
     print(f"  {len(items)} items, {len(item_categories)} item categories")
+
+    print("Fetching GamerTW zh-TW / EN item names…")
+    gamertw = load_gamertw_item_names()
+    zh_stats = apply_gamertw_item_names(items, gamertw)
+    print(
+        f"  zh_tw matched={zh_stats['matched']} "
+        f"methods={zh_stats['methods']} "
+        f"unmatched_gamertw={len(zh_stats['unmatched_gamertw_ids'])} "
+        f"missing_local={len(zh_stats['missing_local_slugs'])}"
+    )
+    if zh_stats["missing_local_slugs"]:
+        print(f"  missing local slugs: {zh_stats['missing_local_slugs']}")
 
     print("Fetching naru JP/EN CSV…")
     en_rows = parse_naru_csv(fetch_text(NARU_EN_CSV))
@@ -522,13 +702,18 @@ def main() -> None:
                     "fields": "name (slug), name_ja, name_zh_tw",
                 },
                 "item_names": {
-                    "name": "Infipoke Pokopia Items",
-                    "url": INFIPOKE_ITEMS,
-                    "fields": "name, name_ja, name_zh",
+                    "name": "Infipoke Pokopia Items + Pokopia GamerTW wiki",
+                    "infipoke_url": INFIPOKE_ITEMS,
+                    "gamertw_zh_tw_url": GAMERTW_ITEMS_ZH,
+                    "gamertw_en_url": GAMERTW_ITEMS_EN,
+                    "fields": "Infipoke name/name_ja/name_zh; GamerTW displayName (zh_tw)",
                     "zh_tw_note": (
-                        "zh_tw item names are OpenCC s2tw conversions of Infipoke "
-                        "Simplified Chinese (name_zh). Original name_zh kept as 'zh'."
+                        "zh_tw item names come from Pokopia GamerTW "
+                        f"({GAMERTW_ITEMS_ZH}) displayName, matched to Infipoke "
+                        "slugs via id/imageSlug/English name. Infipoke Simplified "
+                        "Chinese is kept as 'zh' for traceability. No OpenCC."
                     ),
+                    "zh_tw_match_stats": zh_stats,
                 },
                 "favorite_categories_en_ja": {
                     "name": "naru-pokopia-zukan Google Sheets",
@@ -557,9 +742,9 @@ def main() -> None:
                     "note": "Manual mapping for Bright/Cool/Dark/Dry/Humid/Warm",
                 },
                 "item_categories": {
-                    "name": "Infipoke Pokopia Items filter labels",
-                    "url": INFIPOKE_ITEMS,
-                    "zh_tw_note": "Traditional forms via OpenCC / locale page labels",
+                    "name": "Infipoke EN/JA labels + GamerTW zh-TW item filters",
+                    "infipoke_url": INFIPOKE_ITEMS,
+                    "gamertw_zh_tw_url": GAMERTW_ITEMS_ZH,
                 },
             },
             "generated_by": "scripts/build_localization.py",
