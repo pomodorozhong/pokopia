@@ -105,13 +105,6 @@ function itemLabel(slug) {
   return item[state.lang] || item.en || slug;
 }
 
-/** BCP 47 tag for Intl APIs (`zh_tw` is our data key, not a valid locale). */
-function collatorLocale() {
-  if (state.lang === "zh_tw") return "zh-Hant";
-  if (state.lang === "ja") return "ja";
-  return "en";
-}
-
 function itemCategory(slug) {
   const item = state.data.items[slug];
   if (!item?.category) return "";
@@ -322,14 +315,23 @@ function rankItems(pokemon) {
     benefiting: [...entry.benefiting.values()],
   }));
 
+  // Tie-break by slug only — never pass UI lang keys (e.g. zh_tw) to localeCompare.
   rows.sort((a, b) => {
     if (b.criteriaScore !== a.criteriaScore) return b.criteriaScore - a.criteriaScore;
     if (b.pokemonScore !== a.pokemonScore) return b.pokemonScore - a.pokemonScore;
     if (b.pairHits !== a.pairHits) return b.pairHits - a.pairHits;
-    return itemLabel(a.slug).localeCompare(itemLabel(b.slug), collatorLocale());
+    return a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0;
   });
 
   return rows;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function renderResults() {
@@ -358,27 +360,27 @@ function renderResults() {
   els.resultsList.innerHTML = filtered
     .map((row, index) => {
       const tags = row.matchedFavorites
-        .map((f) => `<span class="tag">${favoriteLabel(f)}</span>`)
+        .map((f) => `<span class="tag">${escapeHtml(favoriteLabel(f))}</span>`)
         .join("");
       const faces = row.benefiting
-        .map(
-          (p) =>
-            `<img src="${pokemonIcon(p)}" alt="${localizeName(p.names, p.name_en)}" title="${localizeName(p.names, p.name_en)}" loading="lazy" />`
-        )
+        .map((p) => {
+          const name = escapeHtml(localizeName(p.names, p.name_en));
+          return `<img src="${pokemonIcon(p)}" alt="${name}" title="${name}" loading="lazy" />`;
+        })
         .join("");
 
       return `
         <article class="item-card" style="animation-delay: ${Math.min(index, 12) * 20}ms">
           <img src="${itemIcon(row.slug)}" alt="" loading="lazy" onerror="this.style.opacity=.25" />
           <div>
-            <h3 class="item-name">${itemLabel(row.slug)}</h3>
-            <p class="item-cat">${itemCategory(row.slug)}</p>
+            <h3 class="item-name">${escapeHtml(itemLabel(row.slug))}</h3>
+            <p class="item-cat">${escapeHtml(itemCategory(row.slug))}</p>
             <div class="tag-row">${tags}</div>
-            <div class="beneficiaries" aria-label="${t("liked_by")}">${faces}</div>
+            <div class="beneficiaries" aria-label="${escapeHtml(t("liked_by"))}">${faces}</div>
           </div>
           <div class="score-box">
             <span class="score">${row.criteriaScore}</span>
-            <span class="score-label">${t("score_label")}</span>
+            <span class="score-label">${escapeHtml(t("score_label"))}</span>
           </div>
         </article>
       `;
@@ -387,11 +389,19 @@ function renderResults() {
 }
 
 function refresh() {
-  applyI18n();
-  renderSelectedTray();
-  renderHabitatWarning();
-  renderPokemonGrid();
-  renderResults();
+  try {
+    applyI18n();
+    renderSelectedTray();
+    renderHabitatWarning();
+    renderPokemonGrid();
+    renderResults();
+  } catch (err) {
+    console.error(err);
+    if (els.resultsHint) {
+      els.resultsHint.hidden = false;
+      els.resultsHint.textContent = `Error: ${err.message}`;
+    }
+  }
 }
 
 function togglePokemon(name) {

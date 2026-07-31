@@ -17,8 +17,8 @@
   --chip: #fff;
   --shadow: 0 18px 50px rgba(14, 28, 20, 0.18);
   --radius: 18px;
-  --font-display: "Fraunces", Georgia, serif;
-  --font-ui: "Outfit", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", Georgia, serif;
+  --font-ui: "Outfit", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
   --habitat-bright: #e8b923;
   --habitat-dark: #4a4e6a;
   --habitat-dry: #c4843b;
