@@ -1,0 +1,4795 @@
+{
+  "meta": {
+    "source": {
+      "name": "Pokopia GamerTW wiki — Favorites",
+      "url": "https://pokopia.gamertw.com/favorite",
+      "note": "Favorite detail pages were used to map each favorite label to item names, then names were matched to localization item slugs."
+    },
+    "generated_from": "data/localization.json",
+    "favorites_total": 48,
+    "labeled_items_total": 575,
+    "unmatched_item_name_total": 1
+  },
+  "favorite_items": {
+    "bitter_flavors": {
+      "en": "Bitter flavors",
+      "ja": "にがい",
+      "zh_tw": "苦苦的",
+      "source_slug": "bitter-flavors",
+      "item_slugs": [
+        "rawstberry",
+        "potato",
+        "seaweed",
+        "recycledbread",
+        "bitterhamburgersteak"
+      ],
+      "item_count": 5
+    },
+    "blocky_stuff": {
+      "en": "Blocky stuff",
+      "ja": "四角い",
+      "zh_tw": "方方的",
+      "source_slug": "blocky-stuff",
+      "item_slugs": [
+        "wallstoragebox",
+        "plainchest",
+        "officecabinet",
+        "antiquechest",
+        "plaincloset",
+        "officelocker",
+        "antiquecloset",
+        "officeshelf",
+        "plainstand",
+        "ironstand",
+        "woodenstool",
+        "ironchair",
+        "publicseat",
+        "softseat",
+        "boxsofa",
+        "logbed",
+        "miniplainbed",
+        "wallmirror",
+        "largemirror",
+        "picnicbasket",
+        "sandwiches",
+        "berrybasket",
+        "letter",
+        "notepad",
+        "book",
+        "openbook",
+        "paper",
+        "newspaper",
+        "photoframe",
+        "corkboard",
+        "minibookcase",
+        "bookcase",
+        "stonefireplace",
+        "modernsink",
+        "cookingstove",
+        "microwaveoven",
+        "refrigerator",
+        "washingmachine",
+        "sink",
+        "tablet",
+        "cellphone",
+        "laptop",
+        "television",
+        "wallmonitor",
+        "arcademachine",
+        "gameboysystem",
+        "speaker",
+        "boo-in-the-box",
+        "cardboardboxes",
+        "whiteboard",
+        "controlunit",
+        "wallcalendar",
+        "hangingscroll",
+        "sandbox",
+        "vendingmachine",
+        "chanseyplant",
+        "inflatableboat",
+        "menuboard",
+        "wornwoodencrate",
+        "woodencrate",
+        "largeventilationfan",
+        "frame",
+        "minigenerator",
+        "walllight",
+        "townmap",
+        "teamrocketwallhanging"
+      ],
+      "item_count": 66
+    },
+    "cleanliness": {
+      "en": "Cleanliness",
+      "ja": "せいけつ",
+      "zh_tw": "整潔的",
+      "source_slug": "cleanliness",
+      "item_slugs": [
+        "waterproofseat",
+        "modernsink",
+        "washingmachine",
+        "toilet",
+        "sink",
+        "towelrack",
+        "bathtimeset",
+        "cleaningsupplies",
+        "shower",
+        "bathtub",
+        "bouncybluebathtub",
+        "waterbasin"
+      ],
+      "item_count": 12
+    },
+    "colorful_stuff": {
+      "en": "Colorful stuff",
+      "ja": "カラフル",
+      "zh_tw": "色彩繽紛的",
+      "source_slug": "colorful-stuff",
+      "item_slugs": [
+        "pokemetal",
+        "redpaint",
+        "bluepaint",
+        "greenpaint",
+        "yellowpaint",
+        "pinkpaint",
+        "cyanpaint",
+        "whitepaint",
+        "blackpaint",
+        "gamingfridge",
+        "stylishstool",
+        "antiquechair",
+        "popartchair",
+        "gamingchair",
+        "antiquesofa",
+        "popartsofa",
+        "pikachusofa",
+        "logbed",
+        "gamingbed",
+        "pizza",
+        "friedpotatoes",
+        "sodafloat",
+        "afternoonteaset",
+        "chocolatecookies",
+        "sandwiches",
+        "shavedice",
+        "ribboncake",
+        "cdrack",
+        "magazinerack",
+        "minibookcase",
+        "bookcase",
+        "stonefireplace",
+        "gamingpc",
+        "pinwheels",
+        "knittingsupplies",
+        "firstaidkit",
+        "balloons",
+        "punchinggame",
+        "partybunting",
+        "berrywalldecoration",
+        "painting(landscape)",
+        "painting(portrait)",
+        "painting(stilllife)",
+        "waterbasin",
+        "raichusign",
+        "photocutoutboard",
+        "pokeballlight",
+        "modelplanet",
+        "gaminglight",
+        "paintballoon(white)",
+        "paintballoon(red)",
+        "paintballoon(yellow)",
+        "paintballoon(green)",
+        "paintballoon(rose)",
+        "paintballoon(pink)",
+        "paintballoon(orange)",
+        "paintballoon(purple)",
+        "paintballoon(brown)",
+        "paintballoon(beige)",
+        "paintballoon(black)",
+        "paintballoon(lime)",
+        "paintballoon(plum)",
+        "paintballoon(navy)",
+        "paintballoon(blue)",
+        "paintballoon(cyan)",
+        "paintballoon(gray)",
+        "paintballoon(aquamarine)",
+        "flowerytablesetting",
+        "lunchbox",
+        "hoppipwaterbottle",
+        "juicetrio",
+        "flowergarland",
+        "hangingbanner",
+        "gardenflowers",
+        "wall-mountedflowers"
+      ],
+      "item_count": 75
+    },
+    "complicated_stuff": {
+      "en": "Complicated stuff",
+      "ja": "難しそうなもの",
+      "zh_tw": "艱深難懂的",
+      "source_slug": "complicated-stuff",
+      "item_slugs": [
+        "pencilholder",
+        "fan",
+        "letter",
+        "notepad",
+        "book",
+        "openbook",
+        "paper",
+        "newspaper",
+        "cdrack",
+        "magazinerack",
+        "minibookcase",
+        "bookcase",
+        "printer",
+        "computer",
+        "microscope",
+        "scienceexperiment",
+        "jumbledcords",
+        "audiomixer",
+        "whiteboard",
+        "controlunit",
+        "spacesuit",
+        "wallcalendar",
+        "antiqueclock",
+        "bike",
+        "menuboard",
+        "sign",
+        "informationboard",
+        "cashregister",
+        "minigenerator",
+        "cardreader",
+        "townmap",
+        "teamrocketwallhanging"
+      ],
+      "item_count": 32
+    },
+    "construction": {
+      "en": "Construction",
+      "ja": "けんせつ",
+      "zh_tw": "建設",
+      "source_slug": "construction",
+      "item_slugs": [
+        "sandbags",
+        "metaldrum",
+        "constructionsupplies",
+        "ironpipes",
+        "wheelbarrow",
+        "ironscaffold"
+      ],
+      "item_count": 6
+    },
+    "containers": {
+      "en": "Containers",
+      "ja": "いれもの",
+      "zh_tw": "容器",
+      "source_slug": "containers",
+      "item_slugs": [
+        "wallstoragebox",
+        "plainchest",
+        "officecabinet",
+        "gamingfridge",
+        "pokeballchest",
+        "berrycase",
+        "antiquechest",
+        "plaincloset",
+        "officelocker",
+        "antiquecloset",
+        "officeshelf",
+        "polygonalshelf",
+        "plainstand",
+        "ironstand",
+        "luxurydresser",
+        "cutedresser",
+        "picnicbasket",
+        "mug",
+        "teaset",
+        "berrybasket",
+        "smallvase",
+        "leaf",
+        "pitcher-plantpot",
+        "extravagantflowers",
+        "tallpottedplant",
+        "twistedpottedplant",
+        "smallgarbagecan",
+        "munnabank",
+        "pencilholder",
+        "photoframe",
+        "cdrack",
+        "magazinerack",
+        "minibookcase",
+        "bookcase",
+        "diningcabinet",
+        "refrigerator",
+        "washingmachine",
+        "firstaidkit",
+        "jumbledcords",
+        "boo-in-the-box",
+        "cardboardboxes",
+        "woodenbirdhouse",
+        "mailbox",
+        "wornwoodencrate",
+        "woodencrate",
+        "barrel",
+        "garbagebin",
+        "recyclingbin",
+        "metaldrum",
+        "constructionsupplies",
+        "wheelbarrow",
+        "frame",
+        "cashregister",
+        "hoppipwaterbottle",
+        "juicetrio",
+        "flowerbackpack"
+      ],
+      "item_count": 56
+    },
+    "cute_stuff": {
+      "en": "Cute stuff",
+      "ja": "キュート",
+      "zh_tw": "可愛的",
+      "source_slug": "cute-stuff",
+      "item_slugs": [
+        "pokeballchest",
+        "berrycase",
+        "polygonalshelf",
+        "cutetable",
+        "poparttable",
+        "berrychair",
+        "stylishstool",
+        "cutechair",
+        "popartchair",
+        "cutesofa",
+        "popartsofa",
+        "pikachusofa",
+        "popartbed",
+        "berrybed",
+        "cutebed",
+        "cutedresser",
+        "wigglymirror",
+        "ribboncake",
+        "munnabank",
+        "bathtimeset",
+        "bouncybluebathtub",
+        "wobbuffetwobbler",
+        "berryclock",
+        "rowletclock",
+        "castformweathercharm",
+        "eeveedoll",
+        "pikachudoll",
+        "clefairydoll",
+        "arcaninedoll",
+        "dragonitedoll",
+        "dittodoll",
+        "substitutedoll",
+        "eeriecandle",
+        "chanseyplant",
+        "photocutoutboard",
+        "berrytablelamp",
+        "cutelamp",
+        "modelplanet",
+        "redmeteorlamp",
+        "orangemeteorlamp",
+        "yellowmeteorlamp",
+        "greenmeteorlamp",
+        "bluemeteorlamp",
+        "indigometeorlamp",
+        "violetmeteorlamp",
+        "luxurylamp",
+        "shelllamp",
+        "berryhanginglamp",
+        "cuteflower",
+        "heartscale",
+        "fairyfeather",
+        "flowercushion",
+        "flowerytablesetting",
+        "lunchbox",
+        "hoppipwaterbottle",
+        "flowerbackpack"
+      ],
+      "item_count": 56
+    },
+    "dry_flavors": {
+      "en": "Dry flavors",
+      "ja": "しぶい",
+      "zh_tw": "澀澀的",
+      "source_slug": "dry-flavors",
+      "item_slugs": [
+        "chestoberry",
+        "wheat",
+        "cavemushrooms",
+        "crushed-berrysalad",
+        "mushroomsoup",
+        "mushroomhamburgersteak",
+        "roseradetea"
+      ],
+      "item_count": 7
+    },
+    "electronics": {
+      "en": "Electronics",
+      "ja": "電気で動く",
+      "zh_tw": "以電力驅動的",
+      "source_slug": "electronics",
+      "item_slugs": [
+        "gamingfridge",
+        "gamingchair",
+        "gamingbed",
+        "microwaveoven",
+        "refrigerator",
+        "fan",
+        "airconditioner",
+        "printer",
+        "washingmachine",
+        "toilet",
+        "tablet",
+        "cellphone",
+        "laptop",
+        "computer",
+        "gamingpc",
+        "television",
+        "wallmonitor",
+        "arcademachine",
+        "gameboysystem",
+        "humidifier",
+        "jumbledcords",
+        "cdplayer",
+        "tabletopmic",
+        "standingmic",
+        "coolelectricguitar",
+        "coolbassguitar",
+        "audiomixer",
+        "speaker",
+        "ceilingfan",
+        "utilitypole",
+        "wirelesspowertransmitter",
+        "minigenerator",
+        "floorswitch",
+        "wallswitch",
+        "cardreader",
+        "securitycamera",
+        "townstreetlight",
+        "harborstreetlight",
+        "chicstreetlight",
+        "doublestreetlight",
+        "mushroomlamp",
+        "plainlamp",
+        "desklight",
+        "pokeballlight",
+        "berrytablelamp",
+        "cutelamp",
+        "pokeballlamp",
+        "modelplanet",
+        "redmeteorlamp",
+        "orangemeteorlamp",
+        "yellowmeteorlamp",
+        "greenmeteorlamp",
+        "bluemeteorlamp",
+        "indigometeorlamp",
+        "violetmeteorlamp",
+        "luxurylamp",
+        "gardenlight",
+        "lantern",
+        "seedotlamp",
+        "mirrorball",
+        "walllight",
+        "shelllamp",
+        "fluorescentlight",
+        "gaminglight",
+        "resortlight",
+        "stringlights",
+        "popartlamp",
+        "berryhanginglamp",
+        "surfacelight",
+        "spotlight",
+        "antiquechandelier",
+        "lasersensor"
+      ],
+      "item_count": 72
+    },
+    "exercise": {
+      "en": "Exercise",
+      "ja": "トレーニングできる",
+      "zh_tw": "訓練用的",
+      "source_slug": "exercise",
+      "item_slugs": [
+        "punchinggame",
+        "wobbuffetwobbler",
+        "punchingbag",
+        "bike"
+      ],
+      "item_count": 4
+    },
+    "fabric": {
+      "en": "Fabric",
+      "ja": "布仕立て",
+      "zh_tw": "布製的",
+      "source_slug": "fabric",
+      "item_slugs": [
+        "fluff",
+        "plainchest",
+        "plaincloset",
+        "plainstand",
+        "simplecushion",
+        "plainstool",
+        "resortstool",
+        "stylishstool",
+        "softseat",
+        "boxsofa",
+        "plainchair",
+        "resortchair",
+        "chicchair",
+        "fan",
+        "antiquechair",
+        "officechair",
+        "cutechair",
+        "popartchair",
+        "gamingchair",
+        "plainsofa",
+        "resortsofa",
+        "chicsofa",
+        "antiquesofa",
+        "luxurysofa",
+        "cutesofa",
+        "popartsofa",
+        "pikachusofa",
+        "logbed",
+        "miniplainbed",
+        "resortbed",
+        "ironbed",
+        "beachchair",
+        "popartbed",
+        "pokeballbed",
+        "berrybed",
+        "resorthammock",
+        "guest-roombed",
+        "antiquebed",
+        "industrialbed",
+        "cutebed",
+        "picnicbasket",
+        "tablesetting",
+        "towelrack",
+        "knittingsupplies",
+        "crystalball",
+        "berryclock",
+        "partybunting",
+        "castformweathercharm",
+        "eeveedoll",
+        "pikachudoll",
+        "clefairydoll",
+        "arcaninedoll",
+        "dragonitedoll",
+        "dittodoll",
+        "substitutedoll",
+        "punchingbag",
+        "blankcanvas",
+        "painting(landscape)",
+        "painting(portrait)",
+        "painting(stilllife)",
+        "beachparasol",
+        "sandbags",
+        "plainlamp",
+        "luxurylamp",
+        "silkscarf",
+        "roomservice",
+        "hangingbanner"
+      ],
+      "item_count": 67
+    },
+    "garbage": {
+      "en": "Garbage",
+      "ja": "ゴミ",
+      "zh_tw": "垃圾",
+      "source_slug": "garbage",
+      "item_slugs": [
+        "nonburnablegarbage",
+        "wastepaper",
+        "smallgarbagecan",
+        "jumbledcords",
+        "letter",
+        "notepad",
+        "book",
+        "paper",
+        "grubbytablet",
+        "grubbycellphone",
+        "garbagebags",
+        "garbagebin",
+        "recyclingbin"
+      ],
+      "item_count": 13
+    },
+    "gatherings": {
+      "en": "Gatherings",
+      "ja": "あつまり",
+      "zh_tw": "集聚在一起的",
+      "source_slug": "gatherings",
+      "item_slugs": [
+        "officeshelf",
+        "teaset",
+        "tablesetting",
+        "paperpartycups",
+        "friedpotatoes",
+        "afternoonteaset",
+        "chocolatecookies",
+        "sandwiches",
+        "pencilholder",
+        "corkboard",
+        "cdrack",
+        "magazinerack",
+        "diningcabinet",
+        "toyblocks",
+        "pinwheels",
+        "knittingsupplies",
+        "scienceexperiment",
+        "jumbledcords",
+        "balloons",
+        "cardboardboxes",
+        "whiteboard",
+        "book",
+        "decorativestorageshelf",
+        "decorativeplantshelf",
+        "berrywalldecoration",
+        "gardenornament",
+        "photocutoutboard",
+        "garbagebags",
+        "sandbags",
+        "tires",
+        "constructionsupplies",
+        "ironpipes",
+        "gaminglight",
+        "stringlights",
+        "flowerytablesetting",
+        "lunchbox",
+        "juicetrio",
+        "flowergarland"
+      ],
+      "item_count": 38
+    },
+    "glass_stuff": {
+      "en": "Glass stuff",
+      "ja": "ガラス入り",
+      "zh_tw": "有玻璃的",
+      "source_slug": "glass-stuff",
+      "item_slugs": [
+        "seaglassfragments",
+        "crystalfragment",
+        "glass",
+        "gamingfridge",
+        "officeshelf",
+        "wallmirror",
+        "largemirror",
+        "antiquedresser",
+        "luxurydresser",
+        "cutedresser",
+        "wigglymirror",
+        "diningcabinet",
+        "microwaveoven",
+        "printer",
+        "washingmachine",
+        "tablet",
+        "cellphone",
+        "laptop",
+        "computer",
+        "gamingpc",
+        "television",
+        "wallmonitor",
+        "arcademachine",
+        "alarmclock",
+        "humidifier",
+        "crystalball",
+        "microscope",
+        "scienceexperiment",
+        "spacesuit",
+        "spaceship",
+        "antiqueclock",
+        "vendingmachine",
+        "raichusign",
+        "cardreader",
+        "townstreetlight",
+        "harborstreetlight",
+        "chicstreetlight",
+        "doublestreetlight",
+        "plainlamp",
+        "desklight",
+        "pokeballlight",
+        "berrytablelamp",
+        "cutelamp",
+        "pokeballlamp",
+        "redmeteorlamp",
+        "orangemeteorlamp",
+        "yellowmeteorlamp",
+        "greenmeteorlamp",
+        "bluemeteorlamp",
+        "indigometeorlamp",
+        "violetmeteorlamp",
+        "luxurylamp",
+        "gardenlight",
+        "lantern",
+        "seedotlamp",
+        "mirrorball",
+        "walllight",
+        "shelllamp",
+        "fluorescentlight",
+        "gaminglight",
+        "stringlights",
+        "popartlamp",
+        "berryhanginglamp",
+        "surfacelight",
+        "spotlight",
+        "antiquechandelier",
+        "clearamulet",
+        "moderndoor",
+        "glasswindow",
+        "windowpane",
+        "sashwindow",
+        "waterpillarquarter",
+        "juicetrio"
+      ],
+      "item_count": 73
+    },
+    "group_activities": {
+      "en": "Group activities",
+      "ja": "みんなで使う",
+      "zh_tw": "大家一起用的",
+      "source_slug": "group-activities",
+      "item_slugs": [
+        "woodenbench",
+        "stonebench",
+        "plainsofa",
+        "resortsofa",
+        "chicsofa",
+        "antiquesofa",
+        "ironbench",
+        "industrialbench",
+        "luxurysofa",
+        "gardenbench",
+        "cutesofa",
+        "popartsofa",
+        "pokeballsofa",
+        "pikachusofa",
+        "popartbed",
+        "woodenbed",
+        "miniplainbed",
+        "guest-roombed",
+        "antiquebed",
+        "industrialbed",
+        "luxurybed",
+        "gamingbed",
+        "picnicbasket",
+        "teaset",
+        "tablesetting",
+        "paperpartycups",
+        "photoframe",
+        "television",
+        "wallmonitor",
+        "arcademachine",
+        "knittingsupplies",
+        "gameboysystem",
+        "jumbledcords",
+        "cdplayer",
+        "standingmic",
+        "boo-in-the-box",
+        "whiteboard",
+        "campfire",
+        "firepit",
+        "bonfire",
+        "sandbox",
+        "tiretoy",
+        "slide",
+        "vendingmachine",
+        "smallstage",
+        "canoe",
+        "inflatableboat",
+        "photocutoutboard",
+        "constructionsupplies",
+        "flowercushion",
+        "flowerytablesetting"
+      ],
+      "item_count": 51
+    },
+    "hard_stuff": {
+      "en": "Hard stuff",
+      "ja": "かたい",
+      "zh_tw": "堅硬的",
+      "source_slug": "hard-stuff",
+      "item_slugs": [
+        "stone",
+        "ironstand",
+        "irontable",
+        "ironrack",
+        "stonetable",
+        "stonebench",
+        "stonefireplace",
+        "strengthrock",
+        "stonetiling(wallpaper)",
+        "stonebrickwall(wallpaper)",
+        "ironball",
+        "laggingtail",
+        "armorfossil",
+        "jawfossil",
+        "wingfossil(head)",
+        "wingfossil(rightwing)",
+        "wingfossil(leftwing)",
+        "wingfossil(body)",
+        "wingfossil(tail)",
+        "headbuttfossil(head)",
+        "headbuttfossil(body)",
+        "headbuttfossil(tail)",
+        "shieldfossil(head)",
+        "shieldfossil(body)",
+        "shieldfossil(tail)",
+        "despotfossil(head)",
+        "despotfossil(body)",
+        "despotfossil(legs)",
+        "despotfossil(tail)",
+        "tundrafossil(head)",
+        "tundrafossil(body)",
+        "tundrafossil(tail)",
+        "stonebrickwall",
+        "stonepillar(upper)",
+        "stonepillar(middle)",
+        "stonepillar(lower)",
+        "stoneflooring",
+        "stonetiling",
+        "stonesteps",
+        "stoneroofdecoration",
+        "metaldebris",
+        "sailfossil",
+        "skullfossil"
+      ],
+      "item_count": 43
+    },
+    "healing": {
+      "en": "Healing",
+      "ja": "キズをいやす",
+      "zh_tw": "能治癒傷口的",
+      "source_slug": "healing",
+      "item_slugs": [
+        "humidifier",
+        "firstaidkit"
+      ],
+      "item_count": 2
+    },
+    "letters_and_words": {
+      "en": "Letters and words",
+      "ja": "文字がある",
+      "zh_tw": "有文字的",
+      "source_slug": "letters-and-words",
+      "item_slugs": [
+        "officeshelf",
+        "letter",
+        "notepad",
+        "book",
+        "openbook",
+        "paper",
+        "newspaper",
+        "television",
+        "wallmonitor",
+        "scienceexperiment",
+        "whiteboard",
+        "wallcalendar",
+        "hangingscroll",
+        "gravestone",
+        "arrowsign",
+        "menuboard",
+        "sign",
+        "informationboard",
+        "raichusign",
+        "frame",
+        "weaknesspolicy"
+      ],
+      "item_count": 21
+    },
+    "looks_like_food": {
+      "en": "Looks like food",
+      "ja": "食べものそっくり",
+      "zh_tw": "像食物的",
+      "source_slug": "looks-like-food",
+      "item_slugs": [
+        "berrycase",
+        "berrytable",
+        "berrychair",
+        "berrybed",
+        "tablesetting",
+        "pizza",
+        "friedpotatoes",
+        "sodafloat",
+        "afternoonteaset",
+        "chocolatecookies",
+        "sandwiches",
+        "shavedice",
+        "ribboncake",
+        "berrybasket",
+        "berryclock",
+        "berrywalldecoration",
+        "berrytablelamp",
+        "berryhanginglamp",
+        "paper",
+        "leftovers",
+        "berryprint",
+        "lunchbox",
+        "juicetrio"
+      ],
+      "item_count": 23
+    },
+    "lots_of_dirt": {
+      "en": "Lots of dirt",
+      "ja": "土を感じる",
+      "zh_tw": "能感受土的",
+      "source_slug": "lots-of-dirt",
+      "item_slugs": [
+        "redpaint",
+        "bluepaint",
+        "greenpaint",
+        "yellowpaint",
+        "pinkpaint",
+        "cyanpaint",
+        "whitepaint",
+        "blackpaint",
+        "knittingsupplies",
+        "sandbox",
+        "punchingbag",
+        "sandbags",
+        "wheelbarrow",
+        "armorfossil",
+        "jawfossil",
+        "wingfossil(head)",
+        "wingfossil(rightwing)",
+        "wingfossil(leftwing)",
+        "wingfossil(body)",
+        "wingfossil(tail)",
+        "headbuttfossil(head)",
+        "headbuttfossil(body)",
+        "headbuttfossil(tail)",
+        "shieldfossil(head)",
+        "shieldfossil(body)",
+        "shieldfossil(tail)",
+        "despotfossil(head)",
+        "despotfossil(body)",
+        "despotfossil(legs)",
+        "despotfossil(tail)",
+        "tundrafossil(head)",
+        "tundrafossil(body)",
+        "tundrafossil(tail)",
+        "mud",
+        "sailfossil",
+        "skullfossil"
+      ],
+      "item_count": 36
+    },
+    "lots_of_fire": {
+      "en": "Lots of fire",
+      "ja": "炎を感じる",
+      "zh_tw": "能感受火的",
+      "source_slug": "lots-of-fire",
+      "item_slugs": [
+        "cookingstove",
+        "fierymagbystatue",
+        "campfire",
+        "torch",
+        "slendercandle",
+        "eeriecandle",
+        "firepit",
+        "bonfire",
+        "smeltingfurnace",
+        "metallicsmeltingfurnace",
+        "charcoal"
+      ],
+      "item_count": 11
+    },
+    "lots_of_nature": {
+      "en": "Lots of nature",
+      "ja": "自然を感じる",
+      "zh_tw": "能感受大自然的",
+      "source_slug": "lots-of-nature",
+      "item_slugs": [
+        "berrycase",
+        "strawtable",
+        "logtable",
+        "gardentable",
+        "berrytable",
+        "berrychair",
+        "logchair",
+        "gardenchair",
+        "gardenbench",
+        "logbed",
+        "strawbed",
+        "berrybed",
+        "woodenbed",
+        "berrybasket",
+        "tallpottedplant",
+        "leaf",
+        "twistedpottedplant",
+        "berryclock",
+        "vinewalldecoration",
+        "berrywalldecoration",
+        "berrytablelamp",
+        "seedotlamp",
+        "berryhanginglamp",
+        "paper",
+        "miracleseed",
+        "silverpowder",
+        "bigroot",
+        "berryprint"
+      ],
+      "item_count": 28
+    },
+    "lots_of_water": {
+      "en": "Lots of water",
+      "ja": "水を感じる",
+      "zh_tw": "能感受水的",
+      "source_slug": "lots-of-water",
+      "item_slugs": [
+        "resorthammock",
+        "paperpartycups",
+        "sodafloat",
+        "shavedice",
+        "modernsink",
+        "toilet",
+        "sink",
+        "bathtimeset",
+        "cleaningsupplies",
+        "shower",
+        "bathtub",
+        "bouncybluebathtub",
+        "humidifier",
+        "funkydiffuser",
+        "waterbasin",
+        "inflatableboat",
+        "beachparasol",
+        "horseafountain",
+        "firehydrant",
+        "sprinkler",
+        "mysticwater",
+        "waterpillarquarter",
+        "hoppipwaterbottle"
+      ],
+      "item_count": 23
+    },
+    "luxury": {
+      "en": "Luxury",
+      "ja": "ゴージャス",
+      "zh_tw": "豪華的",
+      "source_slug": "luxury",
+      "item_slugs": [
+        "antiquechest",
+        "antiquecloset",
+        "antiquetable",
+        "chictable",
+        "luxurytable",
+        "chicchair",
+        "fan",
+        "antiquechair",
+        "luxurychair",
+        "gamingchair",
+        "chicsofa",
+        "antiquesofa",
+        "luxurysofa",
+        "guest-roombed",
+        "antiquebed",
+        "luxurybed",
+        "wallmirror",
+        "largemirror",
+        "antiquedresser",
+        "luxurydresser",
+        "afternoonteaset",
+        "stonefireplace",
+        "diningcabinet",
+        "auspiciousarmor",
+        "maliciousarmor",
+        "antiqueclock",
+        "chanseyplant",
+        "pokeballlight",
+        "pokeballlamp",
+        "luxurylamp",
+        "antiquechandelier"
+      ],
+      "item_count": 31
+    },
+    "metal_stuff": {
+      "en": "Metal stuff",
+      "ja": "メタリック",
+      "zh_tw": "金屬的",
+      "source_slug": "metal-stuff",
+      "item_slugs": [
+        "copperore",
+        "ironore",
+        "goldore",
+        "pokemetalfragment",
+        "rarepokemetalfragment",
+        "copperingot",
+        "ironingot",
+        "goldingot",
+        "pokemetal",
+        "officecabinet",
+        "gamingfridge",
+        "pokeballchest",
+        "officelocker",
+        "officeshelf",
+        "ironstand",
+        "industrialdesk",
+        "irontable",
+        "officedesk",
+        "industrialchair",
+        "ironchair",
+        "publicseat",
+        "spectatorchair",
+        "luxurychair",
+        "gardenchair",
+        "foldingchair",
+        "officechair",
+        "ironbench",
+        "industrialbench",
+        "gardenbench",
+        "pokeballsofa",
+        "ironbed",
+        "industrialbed",
+        "smallgarbagecan",
+        "fan",
+        "modernsink",
+        "cookingstove",
+        "microwaveoven",
+        "refrigerator",
+        "airconditioner",
+        "washingmachine",
+        "shower",
+        "tablet",
+        "cellphone",
+        "laptop",
+        "computer",
+        "gamingpc",
+        "television",
+        "wallmonitor",
+        "alarmclock",
+        "funkydiffuser",
+        "firstaidkit",
+        "microscope",
+        "scienceexperiment",
+        "jumbledcords",
+        "goldteeth",
+        "nugget",
+        "stepstool",
+        "spacesuit",
+        "modelspaceshuttle",
+        "spaceship",
+        "vendingmachine",
+        "bike",
+        "mailbox",
+        "weathervane",
+        "cannon",
+        "bell",
+        "smallstage",
+        "fishingrod",
+        "sign",
+        "informationboard",
+        "barrel",
+        "garbagebin",
+        "recyclingbin",
+        "firehydrant",
+        "excavationtools",
+        "metaldrum",
+        "constructionsupplies",
+        "ironpipes",
+        "wheelbarrow",
+        "largeventilationfan",
+        "cashregister",
+        "sprinkler",
+        "minigenerator",
+        "cardreader",
+        "townstreetlight",
+        "harborstreetlight",
+        "chicstreetlight",
+        "doublestreetlight",
+        "desklight",
+        "pokeballlight",
+        "modelplanet",
+        "gardenlight",
+        "lantern",
+        "mirrorball",
+        "resortlight",
+        "spotlight",
+        "antiquechandelier",
+        "iron-plateflooring(wallpaper)",
+        "teamrocketwallhanging",
+        "ironwall",
+        "plate",
+        "irondeposit",
+        "ironsteps",
+        "ironladder",
+        "irondoor",
+        "irongate",
+        "corrugatedmetal",
+        "metaldebris",
+        "metalfragments",
+        "metalchain"
+      ],
+      "item_count": 110
+    },
+    "nice_breezes": {
+      "en": "Nice breezes",
+      "ja": "風を感じる",
+      "zh_tw": "能感受風的",
+      "source_slug": "nice-breezes",
+      "item_slugs": [
+        "fan",
+        "airconditioner",
+        "pinwheels",
+        "tidalbell",
+        "modelspaceshuttle",
+        "ceilingfan",
+        "weathervane",
+        "largeventilationfan"
+      ],
+      "item_count": 8
+    },
+    "noisy_stuff": {
+      "en": "Noisy stuff",
+      "ja": "音が鳴る",
+      "zh_tw": "會發出聲響的",
+      "source_slug": "noisy-stuff",
+      "item_slugs": [
+        "alarmclock",
+        "cdplayer",
+        "coolelectricguitar",
+        "coolbassguitar",
+        "speaker",
+        "clearbell",
+        "tidalbell",
+        "musicmat(lowdo)",
+        "musicmat(re)",
+        "musicmat(mi)",
+        "musicmat(fa)",
+        "musicmat(sol)",
+        "musicmat(la)",
+        "musicmat(ti)",
+        "musicmat(highdo)"
+      ],
+      "item_count": 15
+    },
+    "ocean_vibes": {
+      "en": "Ocean vibes",
+      "ja": "海を感じる",
+      "zh_tw": "能感受海的",
+      "source_slug": "ocean-vibes",
+      "item_slugs": [
+        "resortstool",
+        "resortchair",
+        "resortsofa",
+        "resortbed",
+        "deckchair",
+        "beachchair",
+        "resorthammock",
+        "ship'swheel",
+        "beachparasol",
+        "horseafountain",
+        "fishingrod",
+        "harborstreetlight",
+        "shelllamp",
+        "resortlight"
+      ],
+      "item_count": 14
+    },
+    "play_spaces": {
+      "en": "Play spaces",
+      "ja": "あそびば",
+      "zh_tw": "遊戲區",
+      "source_slug": "play-spaces",
+      "item_slugs": [
+        "arcademachine",
+        "toyblocks",
+        "pinwheels",
+        "balloons",
+        "punchinggame",
+        "boo-in-the-box",
+        "wobbuffetwobbler",
+        "sandbox",
+        "tiretoy",
+        "slide",
+        "smallstage",
+        "musicmat(lowdo)",
+        "musicmat(re)",
+        "musicmat(mi)",
+        "musicmat(fa)",
+        "musicmat(sol)",
+        "musicmat(la)",
+        "musicmat(ti)",
+        "musicmat(highdo)"
+      ],
+      "item_count": 19
+    },
+    "pretty_flowers": {
+      "en": "Pretty flowers",
+      "ja": "花ざかり",
+      "zh_tw": "花朵綻放的",
+      "source_slug": "pretty-flowers",
+      "item_slugs": [
+        "smallvase",
+        "leaf",
+        "extravagantflowers",
+        "tallpottedplant",
+        "twistedpottedplant",
+        "decorativeplantshelf",
+        "chanseyplant",
+        "wildflowers",
+        "seashoreflowers",
+        "mountainflowers",
+        "skylandflowers",
+        "beautifulflower",
+        "cuteflower",
+        "elegantflower",
+        "robustflower",
+        "robustflower(blue)",
+        "robustflower(orange)",
+        "robustflower(purple)",
+        "robustflower(white)",
+        "flowercushion",
+        "flowerytablesetting",
+        "flowergarland",
+        "flowerbackpack",
+        "gardenflowers",
+        "wall-mountedflowers"
+      ],
+      "item_count": 25
+    },
+    "rides": {
+      "en": "Rides",
+      "ja": "乗りもの",
+      "zh_tw": "交通工具",
+      "source_slug": "rides",
+      "item_slugs": [
+        "stepstool",
+        "modelspaceshuttle",
+        "spaceship",
+        "bike",
+        "handcar"
+      ],
+      "item_count": 5
+    },
+    "round_stuff": {
+      "en": "Round stuff",
+      "ja": "まんまる",
+      "zh_tw": "圓滾滾的",
+      "source_slug": "round-stuff",
+      "item_slugs": [
+        "fluff",
+        "pokeballchest",
+        "pizza",
+        "chocolatecookies",
+        "ribboncake",
+        "smallgarbagecan",
+        "alarmclock",
+        "knittingsupplies",
+        "humidifier",
+        "crystalball",
+        "bigdrum",
+        "nugget",
+        "balloons",
+        "punchinggame",
+        "wobbuffetwobbler",
+        "clearbell",
+        "tidalbell",
+        "ship'swheel",
+        "spaceship",
+        "wreath",
+        "berryclock",
+        "firepit",
+        "tiretoy",
+        "concretepipe",
+        "chanseyplant",
+        "smallstage",
+        "waterbasin",
+        "canoe",
+        "barrel",
+        "tires",
+        "metaldrum",
+        "constructionsupplies",
+        "pokeballlamp",
+        "modelplanet",
+        "seedotlamp",
+        "mirrorball",
+        "surfacelight",
+        "paintballoon(white)",
+        "paintballoon(red)",
+        "paintballoon(yellow)",
+        "paintballoon(green)",
+        "paintballoon(rose)",
+        "paintballoon(pink)",
+        "paintballoon(orange)",
+        "paintballoon(purple)",
+        "paintballoon(brown)",
+        "paintballoon(beige)",
+        "paintballoon(black)",
+        "paintballoon(lime)",
+        "paintballoon(plum)",
+        "paintballoon(navy)",
+        "paintballoon(blue)",
+        "paintballoon(cyan)",
+        "paintballoon(gray)",
+        "paintballoon(aquamarine)",
+        "firework(white)",
+        "firework(red)",
+        "firework(green)",
+        "firework(yellow)",
+        "firework(blue)",
+        "titlescreen",
+        "oak'slab",
+        "pewtercitytheme",
+        "pokemoncenter",
+        "cavesofmt.moon",
+        "fuchsiacitytheme",
+        "pokemongym",
+        "roadtobill",
+        "vermilioncitytheme",
+        "thes.s.anne",
+        "silphco.",
+        "battle!(gymleaderbattle)",
+        "unioncave",
+        "ecruteakcity",
+        "belltower",
+        "fortreecity",
+        "sootopoliscity",
+        "route209(day)",
+        "mt.coronet",
+        "gamecorner",
+        "driftveilcity",
+        "dressupwithprops",
+        "snowbellecity",
+        "boutique",
+        "supertraining!",
+        "contestspectacular",
+        "hau'olicity(day)",
+        "aetherparadise",
+        "ultraruin",
+        "wildarea(north)",
+        "wyndon",
+        "rosetower",
+        "battle!(gymleader)1",
+        "jubilifevillage",
+        "southprovince",
+        "areazero",
+        "battle!(gymleader)2",
+        "silverbottlecap",
+        "goldbottlecap",
+        "luckyegg",
+        "lifeorb",
+        "ironball",
+        "adrenalineorb",
+        "flameorb",
+        "ringtarget",
+        "armorfossil",
+        "theacademy",
+        "pallettown",
+        "route10(unova)",
+        "rockethideout",
+        "roadtoceruleancity",
+        "roadtoviridiancity"
+      ],
+      "item_count": 112
+    },
+    "sharp_stuff": {
+      "en": "Sharp stuff",
+      "ja": "とがっている",
+      "zh_tw": "尖尖的",
+      "source_slug": "sharp-stuff",
+      "item_slugs": [
+        "vendingmachine"
+      ],
+      "item_count": 1
+    },
+    "shiny_stuff": {
+      "en": "Shiny stuff",
+      "ja": "キラキラしてる",
+      "zh_tw": "閃亮亮的",
+      "source_slug": "shiny-stuff",
+      "item_slugs": [
+        "crystalfragment",
+        "stardust",
+        "pokeballchest",
+        "ironstand",
+        "gamingchair",
+        "gamingbed",
+        "bathtimeset",
+        "cleaningsupplies",
+        "tablet",
+        "cellphone",
+        "laptop",
+        "computer",
+        "gamingpc",
+        "television",
+        "wallmonitor",
+        "crystalball",
+        "tabletopmic",
+        "standingmic",
+        "goldteeth",
+        "nugget",
+        "whiteboard",
+        "auspiciousarmor",
+        "clearbell",
+        "gymemblemstatue",
+        "spacesuit",
+        "modelspaceshuttle",
+        "bell",
+        "sign",
+        "informationboard",
+        "firehydrant",
+        "minigenerator",
+        "mushroomstreetlight",
+        "chicstreetlight",
+        "redmeteorlamp",
+        "orangemeteorlamp",
+        "yellowmeteorlamp",
+        "greenmeteorlamp",
+        "bluemeteorlamp",
+        "indigometeorlamp",
+        "violetmeteorlamp",
+        "mirrorball",
+        "fluorescentlight",
+        "musicmat(lowdo)",
+        "musicmat(re)",
+        "musicmat(mi)",
+        "musicmat(fa)",
+        "musicmat(sol)",
+        "musicmat(la)",
+        "musicmat(ti)",
+        "musicmat(highdo)",
+        "starpiece",
+        "silverbottlecap",
+        "goldbottlecap",
+        "metalpowder",
+        "clearamulet",
+        "rainbowfeather",
+        "silverfeather"
+      ],
+      "item_count": 57
+    },
+    "slender_objects": {
+      "en": "Slender objects",
+      "ja": "ほっそり",
+      "zh_tw": "細長的",
+      "source_slug": "slender-objects",
+      "item_slugs": [
+        "vinerope",
+        "twine",
+        "smallvase",
+        "tallpottedplant",
+        "leaf",
+        "twistedpottedplant",
+        "fan",
+        "shower",
+        "vinewalldecoration",
+        "slendercandle",
+        "woodenbirdhouse",
+        "fishingrod",
+        "mushroomstreetlight",
+        "townstreetlight",
+        "harborstreetlight",
+        "chicstreetlight",
+        "doublestreetlight",
+        "desklight",
+        "luxurylamp",
+        "fluorescentlight",
+        "berryhanginglamp",
+        "wingfossil(rightwing)",
+        "wingfossil(leftwing)",
+        "wingfossil(body)",
+        "wingfossil(tail)",
+        "headbuttfossil(body)",
+        "headbuttfossil(tail)",
+        "shieldfossil(body)",
+        "shieldfossil(tail)",
+        "despotfossil(body)",
+        "despotfossil(legs)",
+        "despotfossil(tail)",
+        "tundrafossil(body)",
+        "tundrafossil(tail)",
+        "wire",
+        "rope",
+        "brokenstreetlight",
+        "metalchain"
+      ],
+      "item_count": 38,
+      "unmatched_item_names_en": [
+        "Inflatable Sudowoodo"
+      ]
+    },
+    "soft_stuff": {
+      "en": "Soft stuff",
+      "ja": "やわらかい",
+      "zh_tw": "柔軟的",
+      "source_slug": "soft-stuff",
+      "item_slugs": [
+        "squishyclay",
+        "fluff",
+        "strawstool",
+        "berrychair",
+        "simplecushion",
+        "plainstool",
+        "resortstool",
+        "stylishstool",
+        "softseat",
+        "boxsofa",
+        "plainchair",
+        "resortchair",
+        "chicchair",
+        "fan",
+        "antiquechair",
+        "officechair",
+        "cutechair",
+        "popartchair",
+        "gamingchair",
+        "plainsofa",
+        "resortsofa",
+        "chicsofa",
+        "antiquesofa",
+        "luxurysofa",
+        "cutesofa",
+        "popartsofa",
+        "pikachusofa",
+        "logbed",
+        "miniplainbed",
+        "resortbed",
+        "ironbed",
+        "beachchair",
+        "strawbed",
+        "popartbed",
+        "pokeballbed",
+        "berrybed",
+        "woodenbed",
+        "resorthammock",
+        "guest-roombed",
+        "antiquebed",
+        "industrialbed",
+        "luxurybed",
+        "cutebed",
+        "gamingbed",
+        "naptimebed",
+        "towelrack",
+        "knittingsupplies",
+        "eeveedoll",
+        "pikachudoll",
+        "clefairydoll",
+        "dragonitedoll",
+        "dittodoll",
+        "substitutedoll",
+        "softsand",
+        "lightclay",
+        "cottonspores",
+        "flowercushion",
+        "flowerytablesetting",
+        "flowergarland",
+        "flowerbackpack"
+      ],
+      "item_count": 60
+    },
+    "sour_flavors": {
+      "en": "Sour flavors",
+      "ja": "すっぱい",
+      "zh_tw": "酸酸的",
+      "source_slug": "sour-flavors",
+      "item_slugs": [
+        "aspearberry",
+        "tomato",
+        "shreddedsalad",
+        "flavorfulsoup",
+        "leppabread",
+        "sodapop"
+      ],
+      "item_count": 6
+    },
+    "spicy_flavors": {
+      "en": "Spicy flavors",
+      "ja": "からい",
+      "zh_tw": "辣辣的",
+      "source_slug": "spicy-flavors",
+      "item_slugs": [
+        "freshcarrot",
+        "croutonsalad",
+        "electrifyingsoup",
+        "healthysoup",
+        "carrotbread",
+        "breadbowl",
+        "chilisauce"
+      ],
+      "item_count": 7
+    },
+    "spinning_stuff": {
+      "en": "Spinning stuff",
+      "ja": "まわる",
+      "zh_tw": "會旋轉的",
+      "source_slug": "spinning-stuff",
+      "item_slugs": [
+        "fan",
+        "officechair",
+        "gamingchair",
+        "pinwheels",
+        "ceilingfan",
+        "castformweathercharm",
+        "weathervane",
+        "smallstage",
+        "largeventilationfan",
+        "modelplanet"
+      ],
+      "item_count": 10
+    },
+    "spooky_stuff": {
+      "en": "Spooky stuff",
+      "ja": "ブキミ",
+      "zh_tw": "詭異的",
+      "source_slug": "spooky-stuff",
+      "item_slugs": [
+        "luxurychair",
+        "pitcher-plantpot",
+        "munnabank",
+        "boo-in-the-box",
+        "mysteriousstatue",
+        "slendercandle",
+        "eeriecandle",
+        "gravestone",
+        "mushroomstreetlight",
+        "spelltag"
+      ],
+      "item_count": 10
+    },
+    "stone_stuff": {
+      "en": "Stone stuff",
+      "ja": "石づくり",
+      "zh_tw": "石製的",
+      "source_slug": "stone-stuff",
+      "item_slugs": [
+        "stone",
+        "stonebench",
+        "luxurybed",
+        "smallvase",
+        "pitcher-plantpot",
+        "extravagantflowers",
+        "tallpottedplant",
+        "munnabank",
+        "pencilholder",
+        "stonefireplace",
+        "toilet",
+        "sink",
+        "bathtub",
+        "goldteeth",
+        "nugget",
+        "mysteriousstatue",
+        "fierymagbystatue",
+        "gymemblemstatue",
+        "spacesuit",
+        "modelspaceshuttle",
+        "spaceship",
+        "decorativestorageshelf",
+        "campfire",
+        "slendercandle",
+        "eeriecandle",
+        "torch",
+        "firepit",
+        "concretepipe",
+        "gardenornament",
+        "horseafountain",
+        "sign",
+        "informationboard",
+        "dittoflag",
+        "sprinkler",
+        "stonetiling(wallpaper)",
+        "stonebrickwall(wallpaper)",
+        "lightclay",
+        "stonebrickwall",
+        "stonepillar(upper)",
+        "stonepillar(middle)",
+        "stonepillar(lower)",
+        "stoneflooring",
+        "stonetiling",
+        "stonesteps",
+        "stoneroofdecoration",
+        "metaldebris"
+      ],
+      "item_count": 46
+    },
+    "strange_stuff": {
+      "en": "Strange stuff",
+      "ja": "フシギ",
+      "zh_tw": "奇妙的",
+      "source_slug": "strange-stuff",
+      "item_slugs": [
+        "armorfragment",
+        "polygonalshelf",
+        "wallmirror",
+        "largemirror",
+        "luxurydresser",
+        "cutedresser",
+        "wigglymirror",
+        "cdrack",
+        "modernsink",
+        "cookingstove",
+        "microwaveoven",
+        "refrigerator",
+        "airconditioner",
+        "printer",
+        "washingmachine",
+        "toilet",
+        "sink",
+        "shower",
+        "bathtub",
+        "bouncybluebathtub",
+        "alarmclock",
+        "humidifier",
+        "funkydiffuser",
+        "crystalball",
+        "microscope",
+        "standingmic",
+        "coolelectricguitar",
+        "coolbassguitar",
+        "audiomixer",
+        "goldteeth",
+        "repel",
+        "boo-in-the-box",
+        "wobbuffetwobbler",
+        "auspiciousarmor",
+        "maliciousarmor",
+        "clearbell",
+        "tidalbell",
+        "mysteriousstatue",
+        "fierymagbystatue",
+        "decorativestorageshelf",
+        "rowletclock",
+        "hangingscroll",
+        "ceilingfan",
+        "castformweathercharm",
+        "bike",
+        "gravestone",
+        "cannon",
+        "bell",
+        "smallstage",
+        "horseafountain",
+        "excavationtools",
+        "largeventilationfan",
+        "cashregister",
+        "sprinkler",
+        "minigenerator",
+        "cardreader",
+        "pokeballlamp",
+        "musicmat(lowdo)",
+        "musicmat(re)",
+        "musicmat(mi)",
+        "musicmat(fa)",
+        "musicmat(sol)",
+        "musicmat(la)",
+        "musicmat(ti)",
+        "musicmat(highdo)",
+        "largelostrelic",
+        "smalllostrelic",
+        "twistedspoon",
+        "townmap",
+        "armorfossil",
+        "jawfossil",
+        "wingfossil(head)",
+        "wingfossil(rightwing)",
+        "wingfossil(leftwing)",
+        "wingfossil(body)",
+        "wingfossil(tail)",
+        "headbuttfossil(head)",
+        "headbuttfossil(body)",
+        "headbuttfossil(tail)",
+        "shieldfossil(head)",
+        "shieldfossil(body)",
+        "shieldfossil(tail)",
+        "despotfossil(head)",
+        "despotfossil(body)",
+        "despotfossil(legs)",
+        "despotfossil(tail)",
+        "tundrafossil(head)",
+        "tundrafossil(body)",
+        "tundrafossil(tail)",
+        "sailfossil",
+        "skullfossil"
+      ],
+      "item_count": 91,
+      "unmatched_item_names_en": [
+        "Inflatable Sudowoodo"
+      ]
+    },
+    "sweet_flavors": {
+      "en": "Sweet flavors",
+      "ja": "あまい",
+      "zh_tw": "甜甜的",
+      "source_slug": "sweet-flavors",
+      "item_slugs": [
+        "pechaberry",
+        "bean",
+        "leppasalad",
+        "fluff",
+        "potato",
+        "moomoomilkcoffee",
+        "commoncandy",
+        "rarecandy"
+      ],
+      "item_count": 8
+    },
+    "symbols": {
+      "en": "Symbols",
+      "ja": "シンボル",
+      "zh_tw": "象徵",
+      "source_slug": "symbols",
+      "item_slugs": [
+        "mug",
+        "sign",
+        "informationboard",
+        "teamrocketwallhanging"
+      ],
+      "item_count": 4
+    },
+    "watching_stuff": {
+      "en": "Watching stuff",
+      "ja": "見て楽しむ",
+      "zh_tw": "觀賞用的",
+      "source_slug": "watching-stuff",
+      "item_slugs": [
+        "wallmirror",
+        "wigglymirror",
+        "smallvase",
+        "leaf",
+        "pitcher-plantpot",
+        "extravagantflowers",
+        "tallpottedplant",
+        "twistedpottedplant",
+        "letter",
+        "notepad",
+        "book",
+        "openbook",
+        "paper",
+        "newspaper",
+        "photoframe",
+        "corkboard",
+        "cdrack",
+        "magazinerack",
+        "minibookcase",
+        "bookcase",
+        "television",
+        "wallmonitor",
+        "pinwheels",
+        "microscope",
+        "wallcalendar",
+        "rowletclock",
+        "berrywalldecoration",
+        "bonfire",
+        "blankcanvas",
+        "painting(landscape)",
+        "painting(portrait)",
+        "painting(stilllife)",
+        "photocutoutboard",
+        "frame",
+        "townmap",
+        "teamrocketwallhanging",
+        "waterpillarquarter",
+        "flowergarland"
+      ],
+      "item_count": 38,
+      "unmatched_item_names_en": [
+        "Inflatable Sudowoodo"
+      ]
+    },
+    "wobbly_stuff": {
+      "en": "Wobbly stuff",
+      "ja": "ゆれる",
+      "zh_tw": "會搖晃的",
+      "source_slug": "wobbly-stuff",
+      "item_slugs": [
+        "foldingchair",
+        "resorthammock",
+        "leaf",
+        "pitcher-plantpot",
+        "extravagantflowers",
+        "bigdrum",
+        "balloons",
+        "punchinggame",
+        "wobbuffetwobbler",
+        "berryclock",
+        "ceilingfan",
+        "tiretoy",
+        "punchingbag",
+        "bell",
+        "inflatableboat",
+        "fishingrod",
+        "tires",
+        "resortlight"
+      ],
+      "item_count": 18,
+      "unmatched_item_names_en": [
+        "Inflatable Sudowoodo"
+      ]
+    },
+    "wooden_stuff": {
+      "en": "Wooden stuff",
+      "ja": "木製",
+      "zh_tw": "木製的",
+      "source_slug": "wooden-stuff",
+      "item_slugs": [
+        "storagebox",
+        "wallstoragebox",
+        "bigstoragebox",
+        "plainchest",
+        "officecabinet",
+        "antiquechest",
+        "plaincloset",
+        "antiquecloset",
+        "logtable",
+        "plainstand",
+        "foodcounter",
+        "plaintable",
+        "antiquetable",
+        "studydesk",
+        "logchair",
+        "plainchair",
+        "logbed",
+        "guest-roombed",
+        "woodenplate",
+        "cdrack",
+        "magazinerack",
+        "minibookcase",
+        "bookcase",
+        "diningcabinet",
+        "toyblocks",
+        "wreath",
+        "antiqueclock",
+        "slide",
+        "waterbasin",
+        "arrowsign",
+        "menuboard",
+        "sign",
+        "wornwoodencrate",
+        "woodencrate",
+        "barrel",
+        "frame",
+        "cuttingboard",
+        "mushroomlamp",
+        "stone"
+      ],
+      "item_count": 39
+    }
+  },
+  "item_favorites": {
+    "adrenalineorb": [
+      "round_stuff"
+    ],
+    "aetherparadise": [
+      "round_stuff"
+    ],
+    "afternoonteaset": [
+      "colorful_stuff",
+      "gatherings",
+      "looks_like_food",
+      "luxury"
+    ],
+    "airconditioner": [
+      "electronics",
+      "metal_stuff",
+      "nice_breezes",
+      "strange_stuff"
+    ],
+    "alarmclock": [
+      "glass_stuff",
+      "metal_stuff",
+      "noisy_stuff",
+      "round_stuff",
+      "strange_stuff"
+    ],
+    "antiquebed": [
+      "fabric",
+      "group_activities",
+      "luxury",
+      "soft_stuff"
+    ],
+    "antiquechair": [
+      "colorful_stuff",
+      "fabric",
+      "luxury",
+      "soft_stuff"
+    ],
+    "antiquechandelier": [
+      "electronics",
+      "glass_stuff",
+      "luxury",
+      "metal_stuff"
+    ],
+    "antiquechest": [
+      "blocky_stuff",
+      "containers",
+      "luxury",
+      "wooden_stuff"
+    ],
+    "antiqueclock": [
+      "complicated_stuff",
+      "glass_stuff",
+      "luxury",
+      "wooden_stuff"
+    ],
+    "antiquecloset": [
+      "blocky_stuff",
+      "containers",
+      "luxury",
+      "wooden_stuff"
+    ],
+    "antiquedresser": [
+      "glass_stuff",
+      "luxury"
+    ],
+    "antiquesofa": [
+      "colorful_stuff",
+      "fabric",
+      "group_activities",
+      "luxury",
+      "soft_stuff"
+    ],
+    "antiquetable": [
+      "luxury",
+      "wooden_stuff"
+    ],
+    "arcademachine": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "group_activities",
+      "play_spaces"
+    ],
+    "arcaninedoll": [
+      "cute_stuff",
+      "fabric"
+    ],
+    "areazero": [
+      "round_stuff"
+    ],
+    "armorfossil": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "round_stuff",
+      "strange_stuff"
+    ],
+    "armorfragment": [
+      "strange_stuff"
+    ],
+    "arrowsign": [
+      "letters_and_words",
+      "wooden_stuff"
+    ],
+    "aspearberry": [
+      "sour_flavors"
+    ],
+    "audiomixer": [
+      "complicated_stuff",
+      "electronics",
+      "strange_stuff"
+    ],
+    "auspiciousarmor": [
+      "luxury",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "balloons": [
+      "colorful_stuff",
+      "gatherings",
+      "play_spaces",
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "barrel": [
+      "containers",
+      "metal_stuff",
+      "round_stuff",
+      "wooden_stuff"
+    ],
+    "bathtimeset": [
+      "cleanliness",
+      "cute_stuff",
+      "lots_of_water",
+      "shiny_stuff"
+    ],
+    "bathtub": [
+      "cleanliness",
+      "lots_of_water",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "battle!(gymleader)1": [
+      "round_stuff"
+    ],
+    "battle!(gymleader)2": [
+      "round_stuff"
+    ],
+    "battle!(gymleaderbattle)": [
+      "round_stuff"
+    ],
+    "beachchair": [
+      "fabric",
+      "ocean_vibes",
+      "soft_stuff"
+    ],
+    "beachparasol": [
+      "fabric",
+      "lots_of_water",
+      "ocean_vibes"
+    ],
+    "bean": [
+      "sweet_flavors"
+    ],
+    "beautifulflower": [
+      "pretty_flowers"
+    ],
+    "bell": [
+      "metal_stuff",
+      "shiny_stuff",
+      "strange_stuff",
+      "wobbly_stuff"
+    ],
+    "belltower": [
+      "round_stuff"
+    ],
+    "berrybasket": [
+      "blocky_stuff",
+      "containers",
+      "looks_like_food",
+      "lots_of_nature"
+    ],
+    "berrybed": [
+      "cute_stuff",
+      "fabric",
+      "looks_like_food",
+      "lots_of_nature",
+      "soft_stuff"
+    ],
+    "berrycase": [
+      "containers",
+      "cute_stuff",
+      "looks_like_food",
+      "lots_of_nature"
+    ],
+    "berrychair": [
+      "cute_stuff",
+      "looks_like_food",
+      "lots_of_nature",
+      "soft_stuff"
+    ],
+    "berryclock": [
+      "cute_stuff",
+      "fabric",
+      "looks_like_food",
+      "lots_of_nature",
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "berryhanginglamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "looks_like_food",
+      "lots_of_nature",
+      "slender_objects"
+    ],
+    "berryprint": [
+      "looks_like_food",
+      "lots_of_nature"
+    ],
+    "berrytable": [
+      "looks_like_food",
+      "lots_of_nature"
+    ],
+    "berrytablelamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "looks_like_food",
+      "lots_of_nature"
+    ],
+    "berrywalldecoration": [
+      "colorful_stuff",
+      "gatherings",
+      "looks_like_food",
+      "lots_of_nature",
+      "watching_stuff"
+    ],
+    "bigdrum": [
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "bigroot": [
+      "lots_of_nature"
+    ],
+    "bigstoragebox": [
+      "wooden_stuff"
+    ],
+    "bike": [
+      "complicated_stuff",
+      "exercise",
+      "metal_stuff",
+      "rides",
+      "strange_stuff"
+    ],
+    "bitterhamburgersteak": [
+      "bitter_flavors"
+    ],
+    "blackpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "blankcanvas": [
+      "fabric",
+      "watching_stuff"
+    ],
+    "bluemeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "bluepaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "bonfire": [
+      "group_activities",
+      "lots_of_fire",
+      "watching_stuff"
+    ],
+    "boo-in-the-box": [
+      "blocky_stuff",
+      "containers",
+      "group_activities",
+      "play_spaces",
+      "spooky_stuff",
+      "strange_stuff"
+    ],
+    "book": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "garbage",
+      "gatherings",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "bookcase": [
+      "blocky_stuff",
+      "colorful_stuff",
+      "complicated_stuff",
+      "containers",
+      "watching_stuff",
+      "wooden_stuff"
+    ],
+    "bouncybluebathtub": [
+      "cleanliness",
+      "cute_stuff",
+      "lots_of_water",
+      "strange_stuff"
+    ],
+    "boutique": [
+      "round_stuff"
+    ],
+    "boxsofa": [
+      "blocky_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "breadbowl": [
+      "spicy_flavors"
+    ],
+    "brokenstreetlight": [
+      "slender_objects"
+    ],
+    "campfire": [
+      "group_activities",
+      "lots_of_fire",
+      "stone_stuff"
+    ],
+    "cannon": [
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "canoe": [
+      "group_activities",
+      "round_stuff"
+    ],
+    "cardboardboxes": [
+      "blocky_stuff",
+      "containers",
+      "gatherings"
+    ],
+    "cardreader": [
+      "complicated_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "carrotbread": [
+      "spicy_flavors"
+    ],
+    "cashregister": [
+      "complicated_stuff",
+      "containers",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "castformweathercharm": [
+      "cute_stuff",
+      "fabric",
+      "spinning_stuff",
+      "strange_stuff"
+    ],
+    "cavemushrooms": [
+      "dry_flavors"
+    ],
+    "cavesofmt.moon": [
+      "round_stuff"
+    ],
+    "cdplayer": [
+      "electronics",
+      "group_activities",
+      "noisy_stuff"
+    ],
+    "cdrack": [
+      "colorful_stuff",
+      "complicated_stuff",
+      "containers",
+      "gatherings",
+      "strange_stuff",
+      "watching_stuff",
+      "wooden_stuff"
+    ],
+    "ceilingfan": [
+      "electronics",
+      "nice_breezes",
+      "spinning_stuff",
+      "strange_stuff",
+      "wobbly_stuff"
+    ],
+    "cellphone": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "chanseyplant": [
+      "blocky_stuff",
+      "cute_stuff",
+      "luxury",
+      "pretty_flowers",
+      "round_stuff"
+    ],
+    "charcoal": [
+      "lots_of_fire"
+    ],
+    "chestoberry": [
+      "dry_flavors"
+    ],
+    "chicchair": [
+      "fabric",
+      "luxury",
+      "soft_stuff"
+    ],
+    "chicsofa": [
+      "fabric",
+      "group_activities",
+      "luxury",
+      "soft_stuff"
+    ],
+    "chicstreetlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff",
+      "slender_objects"
+    ],
+    "chictable": [
+      "luxury"
+    ],
+    "chilisauce": [
+      "spicy_flavors"
+    ],
+    "chocolatecookies": [
+      "colorful_stuff",
+      "gatherings",
+      "looks_like_food",
+      "round_stuff"
+    ],
+    "cleaningsupplies": [
+      "cleanliness",
+      "lots_of_water",
+      "shiny_stuff"
+    ],
+    "clearamulet": [
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "clearbell": [
+      "noisy_stuff",
+      "round_stuff",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "clefairydoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "commoncandy": [
+      "sweet_flavors"
+    ],
+    "computer": [
+      "complicated_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "concretepipe": [
+      "round_stuff",
+      "stone_stuff"
+    ],
+    "constructionsupplies": [
+      "construction",
+      "containers",
+      "gatherings",
+      "group_activities",
+      "metal_stuff",
+      "round_stuff"
+    ],
+    "contestspectacular": [
+      "round_stuff"
+    ],
+    "controlunit": [
+      "blocky_stuff",
+      "complicated_stuff"
+    ],
+    "cookingstove": [
+      "blocky_stuff",
+      "lots_of_fire",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "coolbassguitar": [
+      "electronics",
+      "noisy_stuff",
+      "strange_stuff"
+    ],
+    "coolelectricguitar": [
+      "electronics",
+      "noisy_stuff",
+      "strange_stuff"
+    ],
+    "copperingot": [
+      "metal_stuff"
+    ],
+    "copperore": [
+      "metal_stuff"
+    ],
+    "corkboard": [
+      "blocky_stuff",
+      "gatherings",
+      "watching_stuff"
+    ],
+    "corrugatedmetal": [
+      "metal_stuff"
+    ],
+    "cottonspores": [
+      "soft_stuff"
+    ],
+    "croutonsalad": [
+      "spicy_flavors"
+    ],
+    "crushed-berrysalad": [
+      "dry_flavors"
+    ],
+    "crystalball": [
+      "fabric",
+      "glass_stuff",
+      "round_stuff",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "crystalfragment": [
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "cutebed": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "cutechair": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "cutedresser": [
+      "containers",
+      "cute_stuff",
+      "glass_stuff",
+      "strange_stuff"
+    ],
+    "cuteflower": [
+      "cute_stuff",
+      "pretty_flowers"
+    ],
+    "cutelamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff"
+    ],
+    "cutesofa": [
+      "cute_stuff",
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "cutetable": [
+      "cute_stuff"
+    ],
+    "cuttingboard": [
+      "wooden_stuff"
+    ],
+    "cyanpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "deckchair": [
+      "ocean_vibes"
+    ],
+    "decorativeplantshelf": [
+      "gatherings",
+      "pretty_flowers"
+    ],
+    "decorativestorageshelf": [
+      "gatherings",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "desklight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "slender_objects"
+    ],
+    "despotfossil(body)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "despotfossil(head)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "despotfossil(legs)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "despotfossil(tail)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "diningcabinet": [
+      "containers",
+      "gatherings",
+      "glass_stuff",
+      "luxury",
+      "wooden_stuff"
+    ],
+    "dittodoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "dittoflag": [
+      "stone_stuff"
+    ],
+    "doublestreetlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "slender_objects"
+    ],
+    "dragonitedoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "dressupwithprops": [
+      "round_stuff"
+    ],
+    "driftveilcity": [
+      "round_stuff"
+    ],
+    "ecruteakcity": [
+      "round_stuff"
+    ],
+    "eeriecandle": [
+      "cute_stuff",
+      "lots_of_fire",
+      "spooky_stuff",
+      "stone_stuff"
+    ],
+    "eeveedoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "electrifyingsoup": [
+      "spicy_flavors"
+    ],
+    "elegantflower": [
+      "pretty_flowers"
+    ],
+    "excavationtools": [
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "extravagantflowers": [
+      "containers",
+      "pretty_flowers",
+      "stone_stuff",
+      "watching_stuff",
+      "wobbly_stuff"
+    ],
+    "fairyfeather": [
+      "cute_stuff"
+    ],
+    "fan": [
+      "complicated_stuff",
+      "electronics",
+      "fabric",
+      "luxury",
+      "metal_stuff",
+      "nice_breezes",
+      "slender_objects",
+      "soft_stuff",
+      "spinning_stuff"
+    ],
+    "fierymagbystatue": [
+      "lots_of_fire",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "firehydrant": [
+      "lots_of_water",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "firepit": [
+      "group_activities",
+      "lots_of_fire",
+      "round_stuff",
+      "stone_stuff"
+    ],
+    "firework(blue)": [
+      "round_stuff"
+    ],
+    "firework(green)": [
+      "round_stuff"
+    ],
+    "firework(red)": [
+      "round_stuff"
+    ],
+    "firework(white)": [
+      "round_stuff"
+    ],
+    "firework(yellow)": [
+      "round_stuff"
+    ],
+    "firstaidkit": [
+      "colorful_stuff",
+      "containers",
+      "healing",
+      "metal_stuff"
+    ],
+    "fishingrod": [
+      "metal_stuff",
+      "ocean_vibes",
+      "slender_objects",
+      "wobbly_stuff"
+    ],
+    "flameorb": [
+      "round_stuff"
+    ],
+    "flavorfulsoup": [
+      "sour_flavors"
+    ],
+    "floorswitch": [
+      "electronics"
+    ],
+    "flowerbackpack": [
+      "containers",
+      "cute_stuff",
+      "pretty_flowers",
+      "soft_stuff"
+    ],
+    "flowercushion": [
+      "cute_stuff",
+      "group_activities",
+      "pretty_flowers",
+      "soft_stuff"
+    ],
+    "flowergarland": [
+      "colorful_stuff",
+      "gatherings",
+      "pretty_flowers",
+      "soft_stuff",
+      "watching_stuff"
+    ],
+    "flowerytablesetting": [
+      "colorful_stuff",
+      "cute_stuff",
+      "gatherings",
+      "group_activities",
+      "pretty_flowers",
+      "soft_stuff"
+    ],
+    "fluff": [
+      "fabric",
+      "round_stuff",
+      "soft_stuff",
+      "sweet_flavors"
+    ],
+    "fluorescentlight": [
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff",
+      "slender_objects"
+    ],
+    "foldingchair": [
+      "metal_stuff",
+      "wobbly_stuff"
+    ],
+    "foodcounter": [
+      "wooden_stuff"
+    ],
+    "fortreecity": [
+      "round_stuff"
+    ],
+    "frame": [
+      "blocky_stuff",
+      "containers",
+      "letters_and_words",
+      "watching_stuff",
+      "wooden_stuff"
+    ],
+    "freshcarrot": [
+      "spicy_flavors"
+    ],
+    "friedpotatoes": [
+      "colorful_stuff",
+      "gatherings",
+      "looks_like_food"
+    ],
+    "fuchsiacitytheme": [
+      "round_stuff"
+    ],
+    "funkydiffuser": [
+      "lots_of_water",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "gameboysystem": [
+      "blocky_stuff",
+      "electronics",
+      "group_activities"
+    ],
+    "gamecorner": [
+      "round_stuff"
+    ],
+    "gamingbed": [
+      "colorful_stuff",
+      "electronics",
+      "group_activities",
+      "shiny_stuff",
+      "soft_stuff"
+    ],
+    "gamingchair": [
+      "colorful_stuff",
+      "electronics",
+      "fabric",
+      "luxury",
+      "shiny_stuff",
+      "soft_stuff",
+      "spinning_stuff"
+    ],
+    "gamingfridge": [
+      "colorful_stuff",
+      "containers",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff"
+    ],
+    "gaminglight": [
+      "colorful_stuff",
+      "electronics",
+      "gatherings",
+      "glass_stuff"
+    ],
+    "gamingpc": [
+      "colorful_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "garbagebags": [
+      "garbage",
+      "gatherings"
+    ],
+    "garbagebin": [
+      "containers",
+      "garbage",
+      "metal_stuff"
+    ],
+    "gardenbench": [
+      "group_activities",
+      "lots_of_nature",
+      "metal_stuff"
+    ],
+    "gardenchair": [
+      "lots_of_nature",
+      "metal_stuff"
+    ],
+    "gardenflowers": [
+      "colorful_stuff",
+      "pretty_flowers"
+    ],
+    "gardenlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff"
+    ],
+    "gardenornament": [
+      "gatherings",
+      "stone_stuff"
+    ],
+    "gardentable": [
+      "lots_of_nature"
+    ],
+    "glass": [
+      "glass_stuff"
+    ],
+    "glasswindow": [
+      "glass_stuff"
+    ],
+    "goldbottlecap": [
+      "round_stuff",
+      "shiny_stuff"
+    ],
+    "goldingot": [
+      "metal_stuff"
+    ],
+    "goldore": [
+      "metal_stuff"
+    ],
+    "goldteeth": [
+      "metal_stuff",
+      "shiny_stuff",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "gravestone": [
+      "letters_and_words",
+      "spooky_stuff",
+      "strange_stuff"
+    ],
+    "greenmeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "greenpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "grubbycellphone": [
+      "garbage"
+    ],
+    "grubbytablet": [
+      "garbage"
+    ],
+    "guest-roombed": [
+      "fabric",
+      "group_activities",
+      "luxury",
+      "soft_stuff",
+      "wooden_stuff"
+    ],
+    "gymemblemstatue": [
+      "shiny_stuff",
+      "stone_stuff"
+    ],
+    "handcar": [
+      "rides"
+    ],
+    "hangingbanner": [
+      "colorful_stuff",
+      "fabric"
+    ],
+    "hangingscroll": [
+      "blocky_stuff",
+      "letters_and_words",
+      "strange_stuff"
+    ],
+    "harborstreetlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "ocean_vibes",
+      "slender_objects"
+    ],
+    "hau'olicity(day)": [
+      "round_stuff"
+    ],
+    "headbuttfossil(body)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "headbuttfossil(head)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "headbuttfossil(tail)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "healthysoup": [
+      "spicy_flavors"
+    ],
+    "heartscale": [
+      "cute_stuff"
+    ],
+    "hoppipwaterbottle": [
+      "colorful_stuff",
+      "containers",
+      "cute_stuff",
+      "lots_of_water"
+    ],
+    "horseafountain": [
+      "lots_of_water",
+      "ocean_vibes",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "humidifier": [
+      "electronics",
+      "glass_stuff",
+      "healing",
+      "lots_of_water",
+      "round_stuff",
+      "strange_stuff"
+    ],
+    "indigometeorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "industrialbed": [
+      "fabric",
+      "group_activities",
+      "metal_stuff",
+      "soft_stuff"
+    ],
+    "industrialbench": [
+      "group_activities",
+      "metal_stuff"
+    ],
+    "industrialchair": [
+      "metal_stuff"
+    ],
+    "industrialdesk": [
+      "metal_stuff"
+    ],
+    "inflatableboat": [
+      "blocky_stuff",
+      "group_activities",
+      "lots_of_water",
+      "wobbly_stuff"
+    ],
+    "informationboard": [
+      "complicated_stuff",
+      "letters_and_words",
+      "metal_stuff",
+      "shiny_stuff",
+      "stone_stuff",
+      "symbols"
+    ],
+    "iron-plateflooring(wallpaper)": [
+      "metal_stuff"
+    ],
+    "ironball": [
+      "hard_stuff",
+      "round_stuff"
+    ],
+    "ironbed": [
+      "fabric",
+      "metal_stuff",
+      "soft_stuff"
+    ],
+    "ironbench": [
+      "group_activities",
+      "metal_stuff"
+    ],
+    "ironchair": [
+      "blocky_stuff",
+      "metal_stuff"
+    ],
+    "irondeposit": [
+      "metal_stuff"
+    ],
+    "irondoor": [
+      "metal_stuff"
+    ],
+    "irongate": [
+      "metal_stuff"
+    ],
+    "ironingot": [
+      "metal_stuff"
+    ],
+    "ironladder": [
+      "metal_stuff"
+    ],
+    "ironore": [
+      "metal_stuff"
+    ],
+    "ironpipes": [
+      "construction",
+      "gatherings",
+      "metal_stuff"
+    ],
+    "ironrack": [
+      "hard_stuff"
+    ],
+    "ironscaffold": [
+      "construction"
+    ],
+    "ironstand": [
+      "blocky_stuff",
+      "containers",
+      "hard_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "ironsteps": [
+      "metal_stuff"
+    ],
+    "irontable": [
+      "hard_stuff",
+      "metal_stuff"
+    ],
+    "ironwall": [
+      "metal_stuff"
+    ],
+    "jawfossil": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "jubilifevillage": [
+      "round_stuff"
+    ],
+    "juicetrio": [
+      "colorful_stuff",
+      "containers",
+      "gatherings",
+      "glass_stuff",
+      "looks_like_food"
+    ],
+    "jumbledcords": [
+      "complicated_stuff",
+      "containers",
+      "electronics",
+      "garbage",
+      "gatherings",
+      "group_activities",
+      "metal_stuff"
+    ],
+    "knittingsupplies": [
+      "colorful_stuff",
+      "fabric",
+      "gatherings",
+      "group_activities",
+      "lots_of_dirt",
+      "round_stuff",
+      "soft_stuff"
+    ],
+    "laggingtail": [
+      "hard_stuff"
+    ],
+    "lantern": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff"
+    ],
+    "laptop": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "largelostrelic": [
+      "strange_stuff"
+    ],
+    "largemirror": [
+      "blocky_stuff",
+      "glass_stuff",
+      "luxury",
+      "strange_stuff"
+    ],
+    "largeventilationfan": [
+      "blocky_stuff",
+      "metal_stuff",
+      "nice_breezes",
+      "spinning_stuff",
+      "strange_stuff"
+    ],
+    "lasersensor": [
+      "electronics"
+    ],
+    "leaf": [
+      "containers",
+      "lots_of_nature",
+      "pretty_flowers",
+      "slender_objects",
+      "watching_stuff",
+      "wobbly_stuff"
+    ],
+    "leftovers": [
+      "looks_like_food"
+    ],
+    "leppabread": [
+      "sour_flavors"
+    ],
+    "leppasalad": [
+      "sweet_flavors"
+    ],
+    "letter": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "garbage",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "lifeorb": [
+      "round_stuff"
+    ],
+    "lightclay": [
+      "soft_stuff",
+      "stone_stuff"
+    ],
+    "logbed": [
+      "blocky_stuff",
+      "colorful_stuff",
+      "fabric",
+      "lots_of_nature",
+      "soft_stuff",
+      "wooden_stuff"
+    ],
+    "logchair": [
+      "lots_of_nature",
+      "wooden_stuff"
+    ],
+    "logtable": [
+      "lots_of_nature",
+      "wooden_stuff"
+    ],
+    "luckyegg": [
+      "round_stuff"
+    ],
+    "lunchbox": [
+      "colorful_stuff",
+      "cute_stuff",
+      "gatherings",
+      "looks_like_food"
+    ],
+    "luxurybed": [
+      "group_activities",
+      "luxury",
+      "soft_stuff",
+      "stone_stuff"
+    ],
+    "luxurychair": [
+      "luxury",
+      "metal_stuff",
+      "spooky_stuff"
+    ],
+    "luxurydresser": [
+      "containers",
+      "glass_stuff",
+      "luxury",
+      "strange_stuff"
+    ],
+    "luxurylamp": [
+      "cute_stuff",
+      "electronics",
+      "fabric",
+      "glass_stuff",
+      "luxury",
+      "slender_objects"
+    ],
+    "luxurysofa": [
+      "fabric",
+      "group_activities",
+      "luxury",
+      "soft_stuff"
+    ],
+    "luxurytable": [
+      "luxury"
+    ],
+    "magazinerack": [
+      "colorful_stuff",
+      "complicated_stuff",
+      "containers",
+      "gatherings",
+      "watching_stuff",
+      "wooden_stuff"
+    ],
+    "mailbox": [
+      "containers",
+      "metal_stuff"
+    ],
+    "maliciousarmor": [
+      "luxury",
+      "strange_stuff"
+    ],
+    "menuboard": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "letters_and_words",
+      "wooden_stuff"
+    ],
+    "metalchain": [
+      "metal_stuff",
+      "slender_objects"
+    ],
+    "metaldebris": [
+      "hard_stuff",
+      "metal_stuff",
+      "stone_stuff"
+    ],
+    "metaldrum": [
+      "construction",
+      "containers",
+      "metal_stuff",
+      "round_stuff"
+    ],
+    "metalfragments": [
+      "metal_stuff"
+    ],
+    "metallicsmeltingfurnace": [
+      "lots_of_fire"
+    ],
+    "metalpowder": [
+      "shiny_stuff"
+    ],
+    "microscope": [
+      "complicated_stuff",
+      "glass_stuff",
+      "metal_stuff",
+      "strange_stuff",
+      "watching_stuff"
+    ],
+    "microwaveoven": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "minibookcase": [
+      "blocky_stuff",
+      "colorful_stuff",
+      "complicated_stuff",
+      "containers",
+      "watching_stuff",
+      "wooden_stuff"
+    ],
+    "minigenerator": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "electronics",
+      "metal_stuff",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "miniplainbed": [
+      "blocky_stuff",
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "miracleseed": [
+      "lots_of_nature"
+    ],
+    "mirrorball": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "round_stuff",
+      "shiny_stuff"
+    ],
+    "modelplanet": [
+      "colorful_stuff",
+      "cute_stuff",
+      "electronics",
+      "metal_stuff",
+      "round_stuff",
+      "spinning_stuff"
+    ],
+    "modelspaceshuttle": [
+      "metal_stuff",
+      "nice_breezes",
+      "rides",
+      "shiny_stuff",
+      "stone_stuff"
+    ],
+    "moderndoor": [
+      "glass_stuff"
+    ],
+    "modernsink": [
+      "blocky_stuff",
+      "cleanliness",
+      "lots_of_water",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "moomoomilkcoffee": [
+      "sweet_flavors"
+    ],
+    "mountainflowers": [
+      "pretty_flowers"
+    ],
+    "mt.coronet": [
+      "round_stuff"
+    ],
+    "mud": [
+      "lots_of_dirt"
+    ],
+    "mug": [
+      "containers",
+      "symbols"
+    ],
+    "munnabank": [
+      "containers",
+      "cute_stuff",
+      "spooky_stuff",
+      "stone_stuff"
+    ],
+    "mushroomhamburgersteak": [
+      "dry_flavors"
+    ],
+    "mushroomlamp": [
+      "electronics",
+      "wooden_stuff"
+    ],
+    "mushroomsoup": [
+      "dry_flavors"
+    ],
+    "mushroomstreetlight": [
+      "shiny_stuff",
+      "slender_objects",
+      "spooky_stuff"
+    ],
+    "musicmat(fa)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(highdo)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(la)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(lowdo)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(mi)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(re)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(sol)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "musicmat(ti)": [
+      "noisy_stuff",
+      "play_spaces",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "mysteriousstatue": [
+      "spooky_stuff",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "mysticwater": [
+      "lots_of_water"
+    ],
+    "naptimebed": [
+      "soft_stuff"
+    ],
+    "newspaper": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "nonburnablegarbage": [
+      "garbage"
+    ],
+    "notepad": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "garbage",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "nugget": [
+      "metal_stuff",
+      "round_stuff",
+      "shiny_stuff",
+      "stone_stuff"
+    ],
+    "oak'slab": [
+      "round_stuff"
+    ],
+    "officecabinet": [
+      "blocky_stuff",
+      "containers",
+      "metal_stuff",
+      "wooden_stuff"
+    ],
+    "officechair": [
+      "fabric",
+      "metal_stuff",
+      "soft_stuff",
+      "spinning_stuff"
+    ],
+    "officedesk": [
+      "metal_stuff"
+    ],
+    "officelocker": [
+      "blocky_stuff",
+      "containers",
+      "metal_stuff"
+    ],
+    "officeshelf": [
+      "blocky_stuff",
+      "containers",
+      "gatherings",
+      "glass_stuff",
+      "letters_and_words",
+      "metal_stuff"
+    ],
+    "openbook": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "orangemeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "paintballoon(aquamarine)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(beige)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(black)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(blue)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(brown)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(cyan)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(gray)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(green)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(lime)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(navy)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(orange)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(pink)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(plum)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(purple)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(red)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(rose)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(white)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "paintballoon(yellow)": [
+      "colorful_stuff",
+      "round_stuff"
+    ],
+    "painting(landscape)": [
+      "colorful_stuff",
+      "fabric",
+      "watching_stuff"
+    ],
+    "painting(portrait)": [
+      "colorful_stuff",
+      "fabric",
+      "watching_stuff"
+    ],
+    "painting(stilllife)": [
+      "colorful_stuff",
+      "fabric",
+      "watching_stuff"
+    ],
+    "pallettown": [
+      "round_stuff"
+    ],
+    "paper": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "garbage",
+      "letters_and_words",
+      "looks_like_food",
+      "lots_of_nature",
+      "watching_stuff"
+    ],
+    "paperpartycups": [
+      "gatherings",
+      "group_activities",
+      "lots_of_water"
+    ],
+    "partybunting": [
+      "colorful_stuff",
+      "fabric"
+    ],
+    "pechaberry": [
+      "sweet_flavors"
+    ],
+    "pencilholder": [
+      "complicated_stuff",
+      "containers",
+      "gatherings",
+      "stone_stuff"
+    ],
+    "pewtercitytheme": [
+      "round_stuff"
+    ],
+    "photocutoutboard": [
+      "colorful_stuff",
+      "cute_stuff",
+      "gatherings",
+      "group_activities",
+      "watching_stuff"
+    ],
+    "photoframe": [
+      "blocky_stuff",
+      "containers",
+      "group_activities",
+      "watching_stuff"
+    ],
+    "picnicbasket": [
+      "blocky_stuff",
+      "containers",
+      "fabric",
+      "group_activities"
+    ],
+    "pikachudoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "pikachusofa": [
+      "colorful_stuff",
+      "cute_stuff",
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "pinkpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "pinwheels": [
+      "colorful_stuff",
+      "gatherings",
+      "nice_breezes",
+      "play_spaces",
+      "spinning_stuff",
+      "watching_stuff"
+    ],
+    "pitcher-plantpot": [
+      "containers",
+      "spooky_stuff",
+      "stone_stuff",
+      "watching_stuff",
+      "wobbly_stuff"
+    ],
+    "pizza": [
+      "colorful_stuff",
+      "looks_like_food",
+      "round_stuff"
+    ],
+    "plainchair": [
+      "fabric",
+      "soft_stuff",
+      "wooden_stuff"
+    ],
+    "plainchest": [
+      "blocky_stuff",
+      "containers",
+      "fabric",
+      "wooden_stuff"
+    ],
+    "plaincloset": [
+      "blocky_stuff",
+      "containers",
+      "fabric",
+      "wooden_stuff"
+    ],
+    "plainlamp": [
+      "electronics",
+      "fabric",
+      "glass_stuff"
+    ],
+    "plainsofa": [
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "plainstand": [
+      "blocky_stuff",
+      "containers",
+      "fabric",
+      "wooden_stuff"
+    ],
+    "plainstool": [
+      "fabric",
+      "soft_stuff"
+    ],
+    "plaintable": [
+      "wooden_stuff"
+    ],
+    "plate": [
+      "metal_stuff"
+    ],
+    "pokeballbed": [
+      "fabric",
+      "soft_stuff"
+    ],
+    "pokeballchest": [
+      "containers",
+      "cute_stuff",
+      "metal_stuff",
+      "round_stuff",
+      "shiny_stuff"
+    ],
+    "pokeballlamp": [
+      "electronics",
+      "glass_stuff",
+      "luxury",
+      "round_stuff",
+      "strange_stuff"
+    ],
+    "pokeballlight": [
+      "colorful_stuff",
+      "electronics",
+      "glass_stuff",
+      "luxury",
+      "metal_stuff"
+    ],
+    "pokeballsofa": [
+      "group_activities",
+      "metal_stuff"
+    ],
+    "pokemetal": [
+      "colorful_stuff",
+      "metal_stuff"
+    ],
+    "pokemetalfragment": [
+      "metal_stuff"
+    ],
+    "pokemoncenter": [
+      "round_stuff"
+    ],
+    "pokemongym": [
+      "round_stuff"
+    ],
+    "polygonalshelf": [
+      "containers",
+      "cute_stuff",
+      "strange_stuff"
+    ],
+    "popartbed": [
+      "cute_stuff",
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "popartchair": [
+      "colorful_stuff",
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "popartlamp": [
+      "electronics",
+      "glass_stuff"
+    ],
+    "popartsofa": [
+      "colorful_stuff",
+      "cute_stuff",
+      "fabric",
+      "group_activities",
+      "soft_stuff"
+    ],
+    "poparttable": [
+      "cute_stuff"
+    ],
+    "potato": [
+      "bitter_flavors",
+      "sweet_flavors"
+    ],
+    "printer": [
+      "complicated_stuff",
+      "electronics",
+      "glass_stuff",
+      "strange_stuff"
+    ],
+    "publicseat": [
+      "blocky_stuff",
+      "metal_stuff"
+    ],
+    "punchingbag": [
+      "exercise",
+      "fabric",
+      "lots_of_dirt",
+      "wobbly_stuff"
+    ],
+    "punchinggame": [
+      "colorful_stuff",
+      "exercise",
+      "play_spaces",
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "raichusign": [
+      "colorful_stuff",
+      "glass_stuff",
+      "letters_and_words"
+    ],
+    "rainbowfeather": [
+      "shiny_stuff"
+    ],
+    "rarecandy": [
+      "sweet_flavors"
+    ],
+    "rarepokemetalfragment": [
+      "metal_stuff"
+    ],
+    "rawstberry": [
+      "bitter_flavors"
+    ],
+    "recycledbread": [
+      "bitter_flavors"
+    ],
+    "recyclingbin": [
+      "containers",
+      "garbage",
+      "metal_stuff"
+    ],
+    "redmeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "redpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "refrigerator": [
+      "blocky_stuff",
+      "containers",
+      "electronics",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "repel": [
+      "strange_stuff"
+    ],
+    "resortbed": [
+      "fabric",
+      "ocean_vibes",
+      "soft_stuff"
+    ],
+    "resortchair": [
+      "fabric",
+      "ocean_vibes",
+      "soft_stuff"
+    ],
+    "resorthammock": [
+      "fabric",
+      "lots_of_water",
+      "ocean_vibes",
+      "soft_stuff",
+      "wobbly_stuff"
+    ],
+    "resortlight": [
+      "electronics",
+      "metal_stuff",
+      "ocean_vibes",
+      "wobbly_stuff"
+    ],
+    "resortsofa": [
+      "fabric",
+      "group_activities",
+      "ocean_vibes",
+      "soft_stuff"
+    ],
+    "resortstool": [
+      "fabric",
+      "ocean_vibes",
+      "soft_stuff"
+    ],
+    "ribboncake": [
+      "colorful_stuff",
+      "cute_stuff",
+      "looks_like_food",
+      "round_stuff"
+    ],
+    "ringtarget": [
+      "round_stuff"
+    ],
+    "roadtobill": [
+      "round_stuff"
+    ],
+    "roadtoceruleancity": [
+      "round_stuff"
+    ],
+    "roadtoviridiancity": [
+      "round_stuff"
+    ],
+    "robustflower": [
+      "pretty_flowers"
+    ],
+    "robustflower(blue)": [
+      "pretty_flowers"
+    ],
+    "robustflower(orange)": [
+      "pretty_flowers"
+    ],
+    "robustflower(purple)": [
+      "pretty_flowers"
+    ],
+    "robustflower(white)": [
+      "pretty_flowers"
+    ],
+    "rockethideout": [
+      "round_stuff"
+    ],
+    "roomservice": [
+      "fabric"
+    ],
+    "rope": [
+      "slender_objects"
+    ],
+    "roseradetea": [
+      "dry_flavors"
+    ],
+    "rosetower": [
+      "round_stuff"
+    ],
+    "route10(unova)": [
+      "round_stuff"
+    ],
+    "route209(day)": [
+      "round_stuff"
+    ],
+    "rowletclock": [
+      "cute_stuff",
+      "strange_stuff",
+      "watching_stuff"
+    ],
+    "sailfossil": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "sandbags": [
+      "construction",
+      "fabric",
+      "gatherings",
+      "lots_of_dirt"
+    ],
+    "sandbox": [
+      "blocky_stuff",
+      "group_activities",
+      "lots_of_dirt",
+      "play_spaces"
+    ],
+    "sandwiches": [
+      "blocky_stuff",
+      "colorful_stuff",
+      "gatherings",
+      "looks_like_food"
+    ],
+    "sashwindow": [
+      "glass_stuff"
+    ],
+    "scienceexperiment": [
+      "complicated_stuff",
+      "gatherings",
+      "glass_stuff",
+      "letters_and_words",
+      "metal_stuff"
+    ],
+    "seaglassfragments": [
+      "glass_stuff"
+    ],
+    "seashoreflowers": [
+      "pretty_flowers"
+    ],
+    "seaweed": [
+      "bitter_flavors"
+    ],
+    "securitycamera": [
+      "electronics"
+    ],
+    "seedotlamp": [
+      "electronics",
+      "glass_stuff",
+      "lots_of_nature",
+      "round_stuff"
+    ],
+    "shavedice": [
+      "colorful_stuff",
+      "looks_like_food",
+      "lots_of_water"
+    ],
+    "shelllamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "ocean_vibes"
+    ],
+    "shieldfossil(body)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "shieldfossil(head)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "shieldfossil(tail)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "ship'swheel": [
+      "ocean_vibes",
+      "round_stuff"
+    ],
+    "shower": [
+      "cleanliness",
+      "lots_of_water",
+      "metal_stuff",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "shreddedsalad": [
+      "sour_flavors"
+    ],
+    "sign": [
+      "complicated_stuff",
+      "letters_and_words",
+      "metal_stuff",
+      "shiny_stuff",
+      "stone_stuff",
+      "symbols",
+      "wooden_stuff"
+    ],
+    "silkscarf": [
+      "fabric"
+    ],
+    "silphco.": [
+      "round_stuff"
+    ],
+    "silverbottlecap": [
+      "round_stuff",
+      "shiny_stuff"
+    ],
+    "silverfeather": [
+      "shiny_stuff"
+    ],
+    "silverpowder": [
+      "lots_of_nature"
+    ],
+    "simplecushion": [
+      "fabric",
+      "soft_stuff"
+    ],
+    "sink": [
+      "blocky_stuff",
+      "cleanliness",
+      "lots_of_water",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "skullfossil": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "skylandflowers": [
+      "pretty_flowers"
+    ],
+    "slendercandle": [
+      "lots_of_fire",
+      "slender_objects",
+      "spooky_stuff",
+      "stone_stuff"
+    ],
+    "slide": [
+      "group_activities",
+      "play_spaces",
+      "wooden_stuff"
+    ],
+    "smallgarbagecan": [
+      "containers",
+      "garbage",
+      "metal_stuff",
+      "round_stuff"
+    ],
+    "smalllostrelic": [
+      "strange_stuff"
+    ],
+    "smallstage": [
+      "group_activities",
+      "metal_stuff",
+      "play_spaces",
+      "round_stuff",
+      "spinning_stuff",
+      "strange_stuff"
+    ],
+    "smallvase": [
+      "containers",
+      "pretty_flowers",
+      "slender_objects",
+      "stone_stuff",
+      "watching_stuff"
+    ],
+    "smeltingfurnace": [
+      "lots_of_fire"
+    ],
+    "snowbellecity": [
+      "round_stuff"
+    ],
+    "sodafloat": [
+      "colorful_stuff",
+      "looks_like_food",
+      "lots_of_water"
+    ],
+    "sodapop": [
+      "sour_flavors"
+    ],
+    "softsand": [
+      "soft_stuff"
+    ],
+    "softseat": [
+      "blocky_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "sootopoliscity": [
+      "round_stuff"
+    ],
+    "southprovince": [
+      "round_stuff"
+    ],
+    "spaceship": [
+      "glass_stuff",
+      "metal_stuff",
+      "rides",
+      "round_stuff",
+      "stone_stuff"
+    ],
+    "spacesuit": [
+      "complicated_stuff",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff",
+      "stone_stuff"
+    ],
+    "speaker": [
+      "blocky_stuff",
+      "electronics",
+      "noisy_stuff"
+    ],
+    "spectatorchair": [
+      "metal_stuff"
+    ],
+    "spelltag": [
+      "spooky_stuff"
+    ],
+    "spotlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff"
+    ],
+    "sprinkler": [
+      "lots_of_water",
+      "metal_stuff",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "squishyclay": [
+      "soft_stuff"
+    ],
+    "standingmic": [
+      "electronics",
+      "group_activities",
+      "shiny_stuff",
+      "strange_stuff"
+    ],
+    "stardust": [
+      "shiny_stuff"
+    ],
+    "starpiece": [
+      "shiny_stuff"
+    ],
+    "stepstool": [
+      "metal_stuff",
+      "rides"
+    ],
+    "stone": [
+      "hard_stuff",
+      "stone_stuff",
+      "wooden_stuff"
+    ],
+    "stonebench": [
+      "group_activities",
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonebrickwall": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonebrickwall(wallpaper)": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonefireplace": [
+      "blocky_stuff",
+      "colorful_stuff",
+      "hard_stuff",
+      "luxury",
+      "stone_stuff"
+    ],
+    "stoneflooring": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonepillar(lower)": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonepillar(middle)": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonepillar(upper)": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stoneroofdecoration": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonesteps": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonetable": [
+      "hard_stuff"
+    ],
+    "stonetiling": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "stonetiling(wallpaper)": [
+      "hard_stuff",
+      "stone_stuff"
+    ],
+    "storagebox": [
+      "wooden_stuff"
+    ],
+    "strawbed": [
+      "lots_of_nature",
+      "soft_stuff"
+    ],
+    "strawstool": [
+      "soft_stuff"
+    ],
+    "strawtable": [
+      "lots_of_nature"
+    ],
+    "strengthrock": [
+      "hard_stuff"
+    ],
+    "stringlights": [
+      "electronics",
+      "gatherings",
+      "glass_stuff"
+    ],
+    "studydesk": [
+      "wooden_stuff"
+    ],
+    "stylishstool": [
+      "colorful_stuff",
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "substitutedoll": [
+      "cute_stuff",
+      "fabric",
+      "soft_stuff"
+    ],
+    "supertraining!": [
+      "round_stuff"
+    ],
+    "surfacelight": [
+      "electronics",
+      "glass_stuff",
+      "round_stuff"
+    ],
+    "tablesetting": [
+      "fabric",
+      "gatherings",
+      "group_activities",
+      "looks_like_food"
+    ],
+    "tablet": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "shiny_stuff"
+    ],
+    "tabletopmic": [
+      "electronics",
+      "shiny_stuff"
+    ],
+    "tallpottedplant": [
+      "containers",
+      "lots_of_nature",
+      "pretty_flowers",
+      "slender_objects",
+      "stone_stuff",
+      "watching_stuff"
+    ],
+    "teamrocketwallhanging": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "metal_stuff",
+      "symbols",
+      "watching_stuff"
+    ],
+    "teaset": [
+      "containers",
+      "gatherings",
+      "group_activities"
+    ],
+    "television": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "group_activities",
+      "letters_and_words",
+      "metal_stuff",
+      "shiny_stuff",
+      "watching_stuff"
+    ],
+    "theacademy": [
+      "round_stuff"
+    ],
+    "thes.s.anne": [
+      "round_stuff"
+    ],
+    "tidalbell": [
+      "nice_breezes",
+      "noisy_stuff",
+      "round_stuff",
+      "strange_stuff"
+    ],
+    "tires": [
+      "gatherings",
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "tiretoy": [
+      "group_activities",
+      "play_spaces",
+      "round_stuff",
+      "wobbly_stuff"
+    ],
+    "titlescreen": [
+      "round_stuff"
+    ],
+    "toilet": [
+      "cleanliness",
+      "electronics",
+      "lots_of_water",
+      "stone_stuff",
+      "strange_stuff"
+    ],
+    "tomato": [
+      "sour_flavors"
+    ],
+    "torch": [
+      "lots_of_fire",
+      "stone_stuff"
+    ],
+    "towelrack": [
+      "cleanliness",
+      "fabric",
+      "soft_stuff"
+    ],
+    "townmap": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "strange_stuff",
+      "watching_stuff"
+    ],
+    "townstreetlight": [
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "slender_objects"
+    ],
+    "toyblocks": [
+      "gatherings",
+      "play_spaces",
+      "wooden_stuff"
+    ],
+    "tundrafossil(body)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "tundrafossil(head)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "tundrafossil(tail)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "twine": [
+      "slender_objects"
+    ],
+    "twistedpottedplant": [
+      "containers",
+      "lots_of_nature",
+      "pretty_flowers",
+      "slender_objects",
+      "watching_stuff"
+    ],
+    "twistedspoon": [
+      "strange_stuff"
+    ],
+    "ultraruin": [
+      "round_stuff"
+    ],
+    "unioncave": [
+      "round_stuff"
+    ],
+    "utilitypole": [
+      "electronics"
+    ],
+    "vendingmachine": [
+      "blocky_stuff",
+      "glass_stuff",
+      "group_activities",
+      "metal_stuff",
+      "sharp_stuff"
+    ],
+    "vermilioncitytheme": [
+      "round_stuff"
+    ],
+    "vinerope": [
+      "slender_objects"
+    ],
+    "vinewalldecoration": [
+      "lots_of_nature",
+      "slender_objects"
+    ],
+    "violetmeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "wall-mountedflowers": [
+      "colorful_stuff",
+      "pretty_flowers"
+    ],
+    "wallcalendar": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "letters_and_words",
+      "watching_stuff"
+    ],
+    "walllight": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff"
+    ],
+    "wallmirror": [
+      "blocky_stuff",
+      "glass_stuff",
+      "luxury",
+      "strange_stuff",
+      "watching_stuff"
+    ],
+    "wallmonitor": [
+      "blocky_stuff",
+      "electronics",
+      "glass_stuff",
+      "group_activities",
+      "letters_and_words",
+      "metal_stuff",
+      "shiny_stuff",
+      "watching_stuff"
+    ],
+    "wallstoragebox": [
+      "blocky_stuff",
+      "containers",
+      "wooden_stuff"
+    ],
+    "wallswitch": [
+      "electronics"
+    ],
+    "washingmachine": [
+      "blocky_stuff",
+      "cleanliness",
+      "containers",
+      "electronics",
+      "glass_stuff",
+      "metal_stuff",
+      "strange_stuff"
+    ],
+    "wastepaper": [
+      "garbage"
+    ],
+    "waterbasin": [
+      "cleanliness",
+      "colorful_stuff",
+      "lots_of_water",
+      "round_stuff",
+      "wooden_stuff"
+    ],
+    "waterpillarquarter": [
+      "glass_stuff",
+      "lots_of_water",
+      "watching_stuff"
+    ],
+    "waterproofseat": [
+      "cleanliness"
+    ],
+    "weaknesspolicy": [
+      "letters_and_words"
+    ],
+    "weathervane": [
+      "metal_stuff",
+      "nice_breezes",
+      "spinning_stuff"
+    ],
+    "wheat": [
+      "dry_flavors"
+    ],
+    "wheelbarrow": [
+      "construction",
+      "containers",
+      "lots_of_dirt",
+      "metal_stuff"
+    ],
+    "whiteboard": [
+      "blocky_stuff",
+      "complicated_stuff",
+      "gatherings",
+      "group_activities",
+      "letters_and_words",
+      "shiny_stuff"
+    ],
+    "whitepaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ],
+    "wigglymirror": [
+      "cute_stuff",
+      "glass_stuff",
+      "strange_stuff",
+      "watching_stuff"
+    ],
+    "wildarea(north)": [
+      "round_stuff"
+    ],
+    "wildflowers": [
+      "pretty_flowers"
+    ],
+    "windowpane": [
+      "glass_stuff"
+    ],
+    "wingfossil(body)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "wingfossil(head)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "strange_stuff"
+    ],
+    "wingfossil(leftwing)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "wingfossil(rightwing)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "wingfossil(tail)": [
+      "hard_stuff",
+      "lots_of_dirt",
+      "slender_objects",
+      "strange_stuff"
+    ],
+    "wire": [
+      "slender_objects"
+    ],
+    "wirelesspowertransmitter": [
+      "electronics"
+    ],
+    "wobbuffetwobbler": [
+      "cute_stuff",
+      "exercise",
+      "play_spaces",
+      "round_stuff",
+      "strange_stuff",
+      "wobbly_stuff"
+    ],
+    "woodenbed": [
+      "group_activities",
+      "lots_of_nature",
+      "soft_stuff"
+    ],
+    "woodenbench": [
+      "group_activities"
+    ],
+    "woodenbirdhouse": [
+      "containers",
+      "slender_objects"
+    ],
+    "woodencrate": [
+      "blocky_stuff",
+      "containers",
+      "wooden_stuff"
+    ],
+    "woodenplate": [
+      "wooden_stuff"
+    ],
+    "woodenstool": [
+      "blocky_stuff"
+    ],
+    "wornwoodencrate": [
+      "blocky_stuff",
+      "containers",
+      "wooden_stuff"
+    ],
+    "wreath": [
+      "round_stuff",
+      "wooden_stuff"
+    ],
+    "wyndon": [
+      "round_stuff"
+    ],
+    "yellowmeteorlamp": [
+      "cute_stuff",
+      "electronics",
+      "glass_stuff",
+      "shiny_stuff"
+    ],
+    "yellowpaint": [
+      "colorful_stuff",
+      "lots_of_dirt"
+    ]
+  }
+}
