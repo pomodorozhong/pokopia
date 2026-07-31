@@ -105,6 +105,13 @@ function itemLabel(slug) {
   return item[state.lang] || item.en || slug;
 }
 
+/** BCP 47 tag for Intl APIs (`zh_tw` is our data key, not a valid locale). */
+function collatorLocale() {
+  if (state.lang === "zh_tw") return "zh-Hant";
+  if (state.lang === "ja") return "ja";
+  return "en";
+}
+
 function itemCategory(slug) {
   const item = state.data.items[slug];
   if (!item?.category) return "";
@@ -319,7 +326,7 @@ function rankItems(pokemon) {
     if (b.criteriaScore !== a.criteriaScore) return b.criteriaScore - a.criteriaScore;
     if (b.pokemonScore !== a.pokemonScore) return b.pokemonScore - a.pokemonScore;
     if (b.pairHits !== a.pairHits) return b.pairHits - a.pairHits;
-    return itemLabel(a.slug).localeCompare(itemLabel(b.slug), state.lang);
+    return itemLabel(a.slug).localeCompare(itemLabel(b.slug), collatorLocale());
   });
 
   return rows;
