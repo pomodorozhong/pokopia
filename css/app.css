@@ -520,6 +520,13 @@ select {
   margin: 0;
 }
 
+.footer .build-line {
+  margin-top: 0.35rem;
+  opacity: 0.7;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
 @keyframes rise {
   from {
     opacity: 0;

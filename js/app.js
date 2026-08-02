@@ -43,7 +43,7 @@ const I18N = {
       "『Pokémon Pokopia』のファン向けツールです。任天堂・ポケモン・ゲームフリーク公式ではありません。",
     vs: "対",
   },
-  zh_tw: {
+  "zh-Hant": {
     mode1_num: "模式 1",
     mode1_title: "寶可夢 → 道具",
     mode2_num: "模式 2",
@@ -67,9 +67,29 @@ const I18N = {
   },
 };
 
+/** UI lang (BCP 47) → key used inside planner.json / localization (`zh_tw`). */
+const DATA_LANG = {
+  en: "en",
+  ja: "ja",
+  "zh-Hant": "zh_tw",
+  // migrate older localStorage values
+  zh_tw: "zh_tw",
+  "zh-TW": "zh_tw",
+  zh: "zh_tw",
+};
+
+const BUILD_ID = "v3";
+
+function normalizeLang(value) {
+  if (!value) return "en";
+  if (value === "zh_tw" || value === "zh-TW" || value === "zh") return "zh-Hant";
+  if (I18N[value]) return value;
+  return "en";
+}
+
 const state = {
   data: null,
-  lang: localStorage.getItem("pokopia-planner-lang") || "en",
+  lang: normalizeLang(localStorage.getItem("pokopia-planner-lang")),
   selected: new Set(),
   query: "",
   minScore: 2,
@@ -77,39 +97,47 @@ const state = {
 
 const els = {};
 
+function dataLang() {
+  return DATA_LANG[state.lang] || "en";
+}
+
 function t(key) {
   return I18N[state.lang]?.[key] ?? I18N.en[key] ?? key;
 }
 
+function localizedField(obj, fallback = "") {
+  if (!obj) return fallback;
+  const key = dataLang();
+  return obj[key] || obj.en || fallback;
+}
+
 function localizeName(names, fallback = "") {
-  if (!names) return fallback;
-  return names[state.lang] || names.en || fallback;
+  return localizedField(names, fallback);
 }
 
 function favoriteLabel(key) {
   const fav = state.data.favorites[key];
   if (!fav) return key;
-  return fav[state.lang] || fav.en || key;
+  return localizedField(fav, key);
 }
 
 function habitatLabel(key) {
   if (!key) return "";
   const h = state.data.ideal_habitats[key];
   if (!h) return key;
-  return h[state.lang] || h.en || key;
+  return localizedField(h, key);
 }
 
 function itemLabel(slug) {
   const item = state.data.items[slug];
   if (!item) return slug;
-  return item[state.lang] || item.en || slug;
+  return localizedField(item, slug);
 }
 
 function itemCategory(slug) {
   const item = state.data.items[slug];
   if (!item?.category) return "";
   const raw = item.category;
-  // localization item_categories keys are lowercase slugs; CSV/Infipoke use display EN
   const key = Object.keys(state.data.item_categories || {}).find((k) => {
     const cat = state.data.item_categories[k];
     return (
@@ -118,8 +146,7 @@ function itemCategory(slug) {
     );
   });
   if (key) {
-    const cat = state.data.item_categories[key];
-    return cat[state.lang] || cat.en || raw;
+    return localizedField(state.data.item_categories[key], raw);
   }
   return raw;
 }
@@ -132,9 +159,16 @@ function itemIcon(slug) {
   return `icons/items/${slug}.png`;
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function applyI18n() {
-  document.documentElement.lang =
-    state.lang === "zh_tw" ? "zh-Hant" : state.lang === "ja" ? "ja" : "en";
+  document.documentElement.lang = state.lang === "zh-Hant" ? "zh-Hant" : state.lang;
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t(node.dataset.i18n);
@@ -142,6 +176,9 @@ function applyI18n() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     node.placeholder = t(node.dataset.i18nPlaceholder);
   });
+
+  const build = document.getElementById("build-id");
+  if (build) build.textContent = BUILD_ID;
 }
 
 function selectedPokemon() {
@@ -182,18 +219,18 @@ function renderHabitatWarning() {
 
   const items = conflicts
     .map((c) => {
-      const leftNames = c.left.map((p) => localizeName(p.names, p.name_en)).join(", ");
-      const rightNames = c.right.map((p) => localizeName(p.names, p.name_en)).join(", ");
-      return `<li><strong>${habitatLabel(c.pair[0])}</strong> (${leftNames})
-        ${t("vs")}
-        <strong>${habitatLabel(c.pair[1])}</strong> (${rightNames})</li>`;
+      const leftNames = c.left.map((p) => escapeHtml(localizeName(p.names, p.name_en))).join(", ");
+      const rightNames = c.right.map((p) => escapeHtml(localizeName(p.names, p.name_en))).join(", ");
+      return `<li><strong>${escapeHtml(habitatLabel(c.pair[0]))}</strong> (${leftNames})
+        ${escapeHtml(t("vs"))}
+        <strong>${escapeHtml(habitatLabel(c.pair[1]))}</strong> (${rightNames})</li>`;
     })
     .join("");
 
   box.hidden = false;
   box.innerHTML = `
-    <strong>${t("warning_title")}</strong>
-    <div>${t("warning_intro")}</div>
+    <strong>${escapeHtml(t("warning_title"))}</strong>
+    <div>${escapeHtml(t("warning_intro"))}</div>
     <ul>${items}</ul>
   `;
 }
@@ -215,8 +252,8 @@ function renderSelectedTray() {
       (p) => `
       <span class="selected-chip">
         <img src="${pokemonIcon(p)}" alt="" loading="lazy" />
-        <span>${localizeName(p.names, p.name_en)}</span>
-        <button type="button" data-remove="${p.name_en}" aria-label="Remove">×</button>
+        <span>${escapeHtml(localizeName(p.names, p.name_en))}</span>
+        <button type="button" data-remove="${escapeHtml(p.name_en)}" aria-label="Remove">×</button>
       </span>`
     )
     .join("");
@@ -250,18 +287,20 @@ function renderPokemonGrid() {
     const selected = state.selected.has(p.name_en);
     if (!match && !selected) continue;
 
+    const title = escapeHtml(p.favorites.map((f) => favoriteLabel(f)).join(" · "));
+
     html.push(`
       <button
         type="button"
         class="poke-card${selected ? " is-selected" : ""}${!match ? " is-dim" : ""}"
         role="option"
         aria-selected="${selected}"
-        data-name="${p.name_en}"
-        title="${p.favorites.map((f) => favoriteLabel(f)).join(" · ")}"
+        data-name="${escapeHtml(p.name_en)}"
+        title="${title}"
       >
         <img src="${pokemonIcon(p)}" alt="" loading="lazy" />
-        <span class="name">${localizeName(p.names, p.name_en)}</span>
-        <span class="habitat" data-h="${p.ideal_habitat || ""}">${habitatLabel(p.ideal_habitat)}</span>
+        <span class="name">${escapeHtml(localizeName(p.names, p.name_en))}</span>
+        <span class="habitat" data-h="${escapeHtml(p.ideal_habitat || "")}">${escapeHtml(habitatLabel(p.ideal_habitat))}</span>
       </button>
     `);
   }
@@ -293,7 +332,7 @@ function rankItems(pokemon) {
         entry = {
           slug,
           matchedFavorites: new Set(),
-          benefiting: new Map(), // name_en -> pokemon
+          benefiting: new Map(),
           pairHits: 0,
         };
         scored.set(slug, entry);
@@ -315,7 +354,6 @@ function rankItems(pokemon) {
     benefiting: [...entry.benefiting.values()],
   }));
 
-  // Tie-break by slug only — never pass UI lang keys (e.g. zh_tw) to localeCompare.
   rows.sort((a, b) => {
     if (b.criteriaScore !== a.criteriaScore) return b.criteriaScore - a.criteriaScore;
     if (b.pokemonScore !== a.pokemonScore) return b.pokemonScore - a.pokemonScore;
@@ -324,14 +362,6 @@ function rankItems(pokemon) {
   });
 
   return rows;
-}
-
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }
 
 function renderResults() {
@@ -399,24 +429,23 @@ function refresh() {
     console.error(err);
     if (els.resultsHint) {
       els.resultsHint.hidden = false;
-      els.resultsHint.textContent = `Error: ${err.message}`;
+      els.resultsHint.textContent = `Error (${BUILD_ID}): ${err.message}`;
     }
+    if (els.resultsList) els.resultsList.innerHTML = "";
   }
 }
 
 function togglePokemon(name) {
   if (state.selected.has(name)) state.selected.delete(name);
   else state.selected.add(name);
-  renderSelectedTray();
-  renderHabitatWarning();
-  renderPokemonGrid();
-  renderResults();
+  refresh();
 }
 
 function bindEvents() {
   els.langSelect.value = state.lang;
   els.langSelect.addEventListener("change", () => {
-    state.lang = els.langSelect.value;
+    state.lang = normalizeLang(els.langSelect.value);
+    els.langSelect.value = state.lang;
     localStorage.setItem("pokopia-planner-lang", state.lang);
     refresh();
   });
@@ -464,13 +493,14 @@ async function main() {
   els.minScore = document.getElementById("min-score");
 
   state.minScore = Number(els.minScore.value) || 2;
+  // Persist normalized lang (migrates zh_tw → zh-Hant)
+  localStorage.setItem("pokopia-planner-lang", state.lang);
 
-  const res = await fetch("data/planner.json");
+  const res = await fetch(`data/planner.json?v=${BUILD_ID}`);
   if (!res.ok) throw new Error(`Failed to load planner data (${res.status})`);
   state.data = await res.json();
 
-  // Stable alphabetical order by English name for browsing
-  state.data.pokemon.sort((a, b) => a.name_en.localeCompare(b.name_en));
+  state.data.pokemon.sort((a, b) => a.name_en.localeCompare(b.name_en, "en"));
 
   bindEvents();
   refresh();
