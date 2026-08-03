@@ -122,9 +122,9 @@ select {
   font-size: 0.85rem;
 }
 
-#lang-select,
-#min-score,
-#pokemon-search {
+.lang-select,
+.min-score,
+.pokemon-search {
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--chip);
@@ -132,7 +132,7 @@ select {
   padding: 0.45rem 0.85rem;
 }
 
-#lang-select {
+.lang-select {
   background: rgba(247, 251, 246, 0.95);
 }
 
@@ -243,7 +243,7 @@ select {
   margin-bottom: 0.75rem;
 }
 
-#pokemon-search {
+.pokemon-search {
   flex: 1;
   border-radius: 12px;
   padding: 0.65rem 0.9rem;
