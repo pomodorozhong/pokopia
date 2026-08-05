@@ -4,11 +4,11 @@ Tools and reference data for **Pokémon Pokopia**.
 
 ## Living Area Planner (web UI)
 
-React planner for GitHub Pages: pick Pokémon for one living area, rank items by shared favorites, and warn on Ideal Habitat conflicts (Bright↔Dark, Dry↔Humid, Warm↔Cool).
+React planner for GitHub Pages: pick Pokémon for one living area, rank items or similar Pokémon by shared favorites, and warn on Ideal Habitat conflicts (Bright↔Dark, Dry↔Humid, Warm↔Cool).
 
 | Path | Description |
 |------|-------------|
-| `web/` | Vite + React app (Mode 1 planner UI) |
+| `web/` | Vite + React app (Mode 1 + Mode 2 planner UI) |
 | `data/planner.json` | Bundled dataset for the UI (built from CSV + localization + favorite items) |
 | `.github/workflows/deploy-pages.yml` | Builds `web/` and deploys to GitHub Pages on push to `main` |
 
@@ -49,6 +49,12 @@ npm run preview
 1. Select multiple Pokémon planned for the same place.
 2. Items are ranked by how many distinct group favorites they satisfy (then by how many of the selected Pokémon they help).
 3. If selected Pokémon include opposing Ideal Habitats, a warning lists the conflict.
+
+### Mode 2 — Pokémon → Similar Pokémon
+
+1. Select Pokémon you already have (or plan around).
+2. Other Pokémon are ranked by how many distinct group favorites they share (then by how many of the selected Pokémon they overlap with).
+3. Ideal Habitat conflict warnings work the same as Mode 1.
 
 Language: English / 日本語 / 繁體中文 (persisted in `localStorage`).
 
