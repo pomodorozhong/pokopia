@@ -4,33 +4,44 @@ Tools and reference data for **Pokémon Pokopia**.
 
 ## Living Area Planner (web UI)
 
-Static planner for GitHub Pages: pick Pokémon for one living area, rank items by shared favorites, and warn on Ideal Habitat conflicts (Bright↔Dark, Dry↔Humid, Warm↔Cool).
+React planner for GitHub Pages: pick Pokémon for one living area, rank items by shared favorites, and warn on Ideal Habitat conflicts (Bright↔Dark, Dry↔Humid, Warm↔Cool).
 
 | Path | Description |
 |------|-------------|
-| `index.html` | Planner entry point |
-| `css/app.css`, `js/app.js` | UI styles and Mode 1 logic |
+| `web/` | Vite + React app (Mode 1 planner UI) |
 | `data/planner.json` | Bundled dataset for the UI (built from CSV + localization + favorite items) |
+| `.github/workflows/deploy-pages.yml` | Builds `web/` and deploys to GitHub Pages on push to `main` |
 
 ### Host on GitHub Pages
 
 1. Push this repo to GitHub.
 2. **Settings → Pages → Build and deployment**
-3. Source: **Deploy from a branch**
-4. Branch: `main` (or your default), folder: **/ (root)**
-5. Save. The app is served at `https://<user>.github.io/<repo>/`
+3. Source: **GitHub Actions**
+4. After the first successful `Deploy GitHub Pages` workflow run, the app is served at `https://<user>.github.io/<repo>/`
 
-No build step is required at deploy time. After refreshing source data, regenerate the planner bundle:
+Pushes to `main` rebuild and publish automatically. You can also run the workflow manually from the Actions tab.
+
+After refreshing source data, regenerate the planner bundle before committing:
 
 ```bash
 python3 scripts/build_planner_data.py
 ```
 
-Local preview (any static server from the repo root):
+### Local preview
 
 ```bash
-python3 -m http.server 8080
-# open http://localhost:8080/
+cd web
+npm install
+npm run dev
+# open the URL Vite prints (usually http://localhost:5173/)
+```
+
+Production build (copies `data/` and `icons/` into `web/dist/`):
+
+```bash
+cd web
+npm run build
+npm run preview
 ```
 
 ### Mode 1 — Pokémon → Items
@@ -45,7 +56,7 @@ Language: English / 日本語 / 繁體中文 (persisted in `localStorage`).
 
 | Path | Description |
 |------|-------------|
-| `index.html` | Living Area Planner web UI (GitHub Pages) |
+| `web/` | Living Area Planner React app (GitHub Pages via Actions) |
 | `data/Pokopia.csv` | Pokémon database (locations, habitats, favorites, specialties) |
 | `data/localization.json` | `en` / `ja` / `zh_tw` names for Pokémon, favorites, specialties, habitats, items, and item categories |
 | `data/favorite_items.json` | Favorite-labeled item database (`favorite -> item slugs` + reverse `item -> favorites`) |
