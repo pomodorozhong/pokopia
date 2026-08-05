@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { LANG_KEY, assetUrl, htmlLang, t } from './i18n'
 import PokemonPicker from './components/PokemonPicker'
 import ResultsPanel from './components/ResultsPanel'
+import SimilarPokemonResults from './components/SimilarPokemonResults'
 import './App.css'
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
   const [lang, setLang] = useState(
     () => localStorage.getItem(LANG_KEY) || 'en',
   )
+  const [mode, setMode] = useState('mode1')
   const [selected, setSelected] = useState(() => new Set())
   const [query, setQuery] = useState('')
   const [minScore, setMinScore] = useState(2)
@@ -63,6 +65,8 @@ export default function App() {
     setSelected(new Set())
   }
 
+  const ledeKey = mode === 'mode2' ? 'mode2_lede' : 'mode1_lede'
+
   return (
     <>
       <div className="page-bg" aria-hidden="true" />
@@ -93,18 +97,19 @@ export default function App() {
 
         <nav className="mode-tabs" aria-label="Planner modes">
           <button
-            className="mode-tab is-active"
+            className={`mode-tab${mode === 'mode1' ? ' is-active' : ''}`}
             type="button"
-            aria-current="page"
+            aria-current={mode === 'mode1' ? 'page' : undefined}
+            onClick={() => setMode('mode1')}
           >
             <span className="mode-num">{t(lang, 'mode1_num')}</span>
             <span className="mode-title">{t(lang, 'mode1_title')}</span>
           </button>
           <button
-            className="mode-tab is-disabled"
+            className={`mode-tab${mode === 'mode2' ? ' is-active' : ''}`}
             type="button"
-            disabled
-            title="Coming later"
+            aria-current={mode === 'mode2' ? 'page' : undefined}
+            onClick={() => setMode('mode2')}
           >
             <span className="mode-num">{t(lang, 'mode2_num')}</span>
             <span className="mode-title">{t(lang, 'mode2_title')}</span>
@@ -112,7 +117,7 @@ export default function App() {
         </nav>
 
         <p className="lede">
-          {error ? t(lang, 'load_error') : t(lang, 'mode1_lede')}
+          {error ? t(lang, 'load_error') : t(lang, ledeKey)}
         </p>
 
         {data ? (
@@ -127,13 +132,23 @@ export default function App() {
               onRemove={removePokemon}
               onClear={clearSelection}
             />
-            <ResultsPanel
-              data={data}
-              lang={lang}
-              selected={selected}
-              minScore={minScore}
-              onMinScoreChange={setMinScore}
-            />
+            {mode === 'mode2' ? (
+              <SimilarPokemonResults
+                data={data}
+                lang={lang}
+                selected={selected}
+                minScore={minScore}
+                onMinScoreChange={setMinScore}
+              />
+            ) : (
+              <ResultsPanel
+                data={data}
+                lang={lang}
+                selected={selected}
+                minScore={minScore}
+                onMinScoreChange={setMinScore}
+              />
+            )}
           </main>
         ) : null}
 
